@@ -8,23 +8,19 @@
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  font-family: 'Soho W01 Medium',sans-serif;
 }
 
-#nav {
-  padding: 30px;
+h1 {
+  color: #271d6c;
+  margin: 0 0 7px 0;
+  font-size: 2.6rem;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+h2, h3 {
+  color: #271d6c;
+  margin-bottom: 8px;
+  font-size: 1.25rem;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>
