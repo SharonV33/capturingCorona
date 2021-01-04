@@ -13,6 +13,8 @@ Our main objectives are
 
 ## Project setup
 ```
+git clone https://github.com/SharonV33/capturingCorona.git
+cd capturingCorona
 npm install
 ```
 
