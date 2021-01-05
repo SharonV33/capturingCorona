@@ -1,12 +1,15 @@
 <template>
+  <!--<ul>-->
+    <!--<li>-->
+      <!--<router-link to="/">Home</router-link>-->
+    <!--</li>-->
+    <!--<li>-->
+      <!--<router-link to="/about">About</router-link>-->
+    <!--</li>-->
+  <!--</ul>-->
   <div id="nav">
+    <img src="https://www.cbs.nl/Content/images/cbs-brand.svg">
     <ul>
-      <li>
-        <router-link to="/">Home</router-link>
-      </li>
-      <li>
-      <router-link to="/about">About</router-link>
-      </li>
       <li>
         <a>cijfers</a>
       </li>
@@ -26,6 +29,10 @@
         <a>corporate</a>
       </li>
     </ul>
+    <section>
+      <img id="searchIcon" src="./assets/search.png">
+      <a>English</a>
+    </section>
   </div>
 
   <router-view/>
@@ -34,6 +41,7 @@
 <style>
 * {
   font-family: 'Soho W01 Medium',sans-serif;
+  font-size: 1rem;
 }
 
 h1 {
@@ -60,16 +68,30 @@ h3 {
   border-bottom: 1px solid #eee;
 }
 
+#nav img {
+  width: 30px;
+  height: 45px;
+}
+
+#nav section #searchIcon {
+  height: 30px;
+  padding-top: 10px;
+}
+
+#nav section a {
+  margin-bottom: 5px;
+}
+
 #nav ul {
   list-style: none;
   display: flex;
   flex-direction: row;
-  width: 40vw;
 }
 
 #nav ul li a {
-  font-size: .9rem;
+  font-family: 'Soho W01 Medium',sans-serif;
   padding-right: 15px;
+  color: #271d6c;
 }
 
 /*h3 titles #c90c0f*/
