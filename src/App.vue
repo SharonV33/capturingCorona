@@ -36,6 +36,29 @@
         </fieldset>
       </form>
     </section>
+    <section id="category">
+      <div id="economy">
+        <img src="./assets/economy.svg">
+      </div>
+      <div id="social">
+        <img src="./assets/social.svg">
+      </div>
+      <div id="medical">
+        <img src="./assets/medical.svg">
+      </div>
+      <div id="product">
+        <img src="./assets/product.svg">
+      </div>
+      <div id="government">
+        <img src="./assets/government.svg">
+      </div>
+      <div id="transport">
+        <img src="./assets/transport.svg">
+      </div>
+      <div id="work">
+        <img src="./assets/work.svg">
+      </div>
+    </section>
   </section>
 
 
@@ -77,7 +100,7 @@ h3 {
 }
 
 #nav section #searchIcon {
-  height: 2rem;
+  height: 1.5rem;
   padding-top: 0.5rem;
 }
 
@@ -135,6 +158,53 @@ h3 {
   background-color: #86BD40;
 }
 
+#category {
+  background-color: #F4F4F4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 5vw;
+  height: 100vh;
+  padding-top: 1rem;
+}
+#category div {
+  border: 1px solid darkgray;
+  border-radius: 10px;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+#category div img {
+  width: 2em;
+}
+
+#category #economy {
+  background-color: #53A31F;
+}
+
+#category #social {
+  background-color: #F29100;
+}
+
+#category #medical {
+  background-color: #E94B0B;
+}
+
+#category #product {
+  background-color: #B00F81;
+}
+
+#category #government {
+  background-color: #0F2E91;
+}
+
+#category #transport {
+  background-color: #0058B9;
+}
+
+#category #work {
+  background-color: #53A31F;
+}
 /*h3 titles #c90c0f*/
 /*economy accent #53A31F*/
 /*body text #091d23*/
