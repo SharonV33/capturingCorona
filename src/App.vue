@@ -28,7 +28,13 @@
       </section>
     </section>
     <section id="search">
-      <input type="text" placeholder="stel je vraag">
+      <form>
+        <input type="text" placeholder="stel je vraag">
+        <fieldset>
+          <button>regionaal</button>
+          <button>landelijk</button>
+        </fieldset>
+      </form>
     </section>
   </section>
 
@@ -43,8 +49,8 @@
 
 h1 {
   color: #271d6c;
-  margin: 0 0 7px 0;
   font-size: 2.6rem;
+  margin: 0 0 7px 0;
 }
 
 h2 {
@@ -54,8 +60,8 @@ h2 {
 
 h3 {
   color: #271d6c;
-  margin-bottom: 1rem;
   font-size: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 #nav {
@@ -87,18 +93,48 @@ h3 {
 
 #nav ul li a {
   font-family: 'Soho W01 Medium',sans-serif;
-  padding-right: 1.5rem;
   color: #271d6c;
+  padding-right: 2rem;
 }
 
 #search {
   width: 100vw;
   height: 4rem;
   background-color: #F4F4F4;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
 }
+#search form {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  align-items: center;
+  padding-top: 0.5rem;
+}
+
+#search form input {
+  height: 2rem;
+  width: 60%;
+  color: #091d23;
+  border: 1px solid darkgray;
+  justify-self: end;
+  border-radius: 15px;
+  padding-left: 1rem;
+}
+
+#search form fieldset {
+  border: none;
+}
+
+#search form fieldset button {
+  height: 2rem;
+  width: 6rem;
+  background-color: #CCCCCC;
+  color: #ffffff;
+  border: 1px solid darkgray;
+}
+
+#search form fieldset :first-child {
+  background-color: #86BD40;
+}
+
 /*h3 titles #c90c0f*/
 /*economy accent #53A31F*/
 /*body text #091d23*/
