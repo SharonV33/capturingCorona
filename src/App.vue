@@ -1,41 +1,38 @@
 <template>
-  <!--<ul>-->
-    <!--<li>-->
-      <!--<router-link to="/">Home</router-link>-->
-    <!--</li>-->
-    <!--<li>-->
-      <!--<router-link to="/about">About</router-link>-->
-    <!--</li>-->
-  <!--</ul>-->
-  <div id="nav">
-    <img src="https://www.cbs.nl/Content/images/cbs-brand.svg">
-    <ul>
-      <li>
-        <a>cijfers</a>
-      </li>
-      <li>
-        <a>Arbeid en inkomen</a>
-      </li>
-      <li>
-        <a>Economie</a>
-      </li>
-      <li>
-        <a>Maatschappij</a>
-      </li>
-      <li>
-        <a>Regio</a>
-      </li>
-      <li>
-        <a>corporate</a>
-      </li>
-    </ul>
-    <section>
-      <img id="searchIcon" src="./assets/search.png">
-      <a>English</a>
+  <section>
+    <section id="nav">
+      <img src="https://www.cbs.nl/Content/images/cbs-brand.svg">
+      <ul>
+        <li>
+          <a>cijfers</a>
+        </li>
+        <li>
+          <a>Arbeid en inkomen</a>
+        </li>
+        <li>
+          <a>Economie</a>
+        </li>
+        <li>
+          <a>Maatschappij</a>
+        </li>
+        <li>
+          <a>Regio</a>
+        </li>
+        <li>
+          <a>corporate</a>
+        </li>
+      </ul>
+      <section>
+        <img id="searchIcon" src="./assets/search.png">
+        <a>English</a>
+      </section>
     </section>
-  </div>
+    <section id="search">
+      <input type="text" placeholder="stel je vraag">
+    </section>
+  </section>
 
-  <router-view/>
+
 </template>
 
 <style>
@@ -57,7 +54,7 @@ h2 {
 
 h3 {
   color: #271d6c;
-  margin-bottom: 8px;
+  margin-bottom: 1rem;
   font-size: 1.25rem;
 }
 
@@ -69,17 +66,17 @@ h3 {
 }
 
 #nav img {
-  width: 30px;
-  height: 45px;
+  width: 1.5rem;
+  height: 3rem;
 }
 
 #nav section #searchIcon {
-  height: 30px;
-  padding-top: 10px;
+  height: 2rem;
+  padding-top: 0.5rem;
 }
 
 #nav section a {
-  margin-bottom: 5px;
+  margin-bottom: 0.5rem;
 }
 
 #nav ul {
@@ -90,10 +87,18 @@ h3 {
 
 #nav ul li a {
   font-family: 'Soho W01 Medium',sans-serif;
-  padding-right: 15px;
+  padding-right: 1.5rem;
   color: #271d6c;
 }
 
+#search {
+  width: 100vw;
+  height: 4rem;
+  background-color: #F4F4F4;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
 /*h3 titles #c90c0f*/
 /*economy accent #53A31F*/
 /*body text #091d23*/
