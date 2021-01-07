@@ -30,10 +30,6 @@
     <section id="search">
       <form>
         <input type="text" placeholder="stel je vraag">
-        <fieldset>
-          <button>regionaal</button>
-          <button>landelijk</button>
-        </fieldset>
       </form>
     </section>
     <section id="category">
@@ -125,6 +121,7 @@ h3 {
   height: 4rem;
   background-color: #F4F4F4;
 }
+
 #search form {
   display: grid;
   grid-template-columns: 65% 35%;
@@ -142,22 +139,6 @@ h3 {
   padding-left: 1rem;
 }
 
-#search form fieldset {
-  border: none;
-}
-
-#search form fieldset button {
-  height: 2rem;
-  width: 6rem;
-  background-color: #CCCCCC;
-  color: #ffffff;
-  border: 1px solid darkgray;
-}
-
-#search form fieldset :first-child {
-  background-color: #86BD40;
-}
-
 #category {
   background-color: #F4F4F4;
   display: flex;
@@ -168,10 +149,14 @@ h3 {
   padding-top: 1rem;
 }
 #category div {
+  opacity: 30%;
   border: 1px solid darkgray;
   border-radius: 10px;
   padding: 0.5rem;
   margin: 0.5rem 0;
+}
+#category div:hover {
+  opacity: 100%;
 }
 
 #category div img {
@@ -203,7 +188,7 @@ h3 {
 }
 
 #category #work {
-  background-color: #53A31F;
+  background-color: #21A1CD;
 }
 /*h3 titles #c90c0f*/
 /*economy accent #53A31F*/
