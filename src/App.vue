@@ -64,6 +64,7 @@
 * {
   font-family: 'Soho W01 Medium',sans-serif;
   font-size: 1rem;
+  margin-left: 0!important;
 }
 
 h1 {
