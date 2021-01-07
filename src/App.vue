@@ -150,6 +150,7 @@ h3 {
 }
 
 #category div {
+  opacity: 65%;
   border: 1px solid darkgray;
   border-radius: 10px;
   padding: 0.5rem;
