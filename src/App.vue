@@ -1,62 +1,7 @@
 <template>
-  <section>
-    <section id="nav">
-      <img src="https://www.cbs.nl/Content/images/cbs-brand.svg">
-      <ul>
-        <li>
-          <a>cijfers</a>
-        </li>
-        <li>
-          <a>Arbeid en inkomen</a>
-        </li>
-        <li>
-          <a>Economie</a>
-        </li>
-        <li>
-          <a>Maatschappij</a>
-        </li>
-        <li>
-          <a>Regio</a>
-        </li>
-        <li>
-          <a>corporate</a>
-        </li>
-      </ul>
-      <section>
-        <img id="searchIcon" src="./assets/search.png">
-        <a>English</a>
-      </section>
-    </section>
-    <section id="search">
-      <form>
-        <input type="text" placeholder="stel je vraag">
-      </form>
-    </section>
-    <section id="category">
-      <div class="economy">
-        <img src="./assets/economy.svg">
-      </div>
-      <div class="social">
-        <img src="./assets/social.svg">
-      </div>
-      <div class="medical">
-        <img src="./assets/medical.svg">
-      </div>
-      <div class="product">
-        <img src="./assets/product.svg">
-      </div>
-      <div class="government">
-        <img src="./assets/government.svg">
-      </div>
-      <div class="transport">
-        <img src="./assets/transport.svg">
-      </div>
-      <div class="work">
-        <img src="./assets/work.svg">
-      </div>
-    </section>
-  </section>
-
+  <div>
+    <router-view/>
+  </div>
 
 </template>
 
@@ -83,6 +28,7 @@ h3 {
   font-size: 1.25rem;
   margin-bottom: 1rem;
 }
+
 
 #nav {
   width: 100vw;
@@ -121,18 +67,18 @@ h3 {
   width: 100vw;
   height: 4rem;
   background-color: #F4F4F4;
+  display: flex;
+  justify-content: center;
 }
 
 #search form {
-  display: grid;
-  grid-template-columns: 65% 35%;
   align-items: center;
   padding-top: 0.5rem;
 }
 
 #search form input {
   height: 2rem;
-  width: 60%;
+  width: 40vw;
   color: #091d23;
   border: 1px solid darkgray;
   justify-self: end;
@@ -154,6 +100,7 @@ h3 {
   opacity: 0.65;
   border: 1px solid darkgray;
   border-radius: 10px;
+  cursor: pointer;
   padding: 0.5rem;
   margin: 0.5rem 0;
 }
@@ -163,7 +110,7 @@ h3 {
 }
 
 #category div img {
-  width: 2em;
+  width: 2rem;
 }
 
 #category .economy {
@@ -194,7 +141,6 @@ h3 {
   background-color: #21A1CD;
 }
 /*h3 titles #c90c0f*/
-/*economy accent #53A31F*/
 /*body text #091d23*/
 /*cbs logo #00A1CD*/
 </style>
