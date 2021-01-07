@@ -33,25 +33,25 @@
       </form>
     </section>
     <section id="category">
-      <div id="economy">
+      <div class="economy">
         <img src="./assets/economy.svg">
       </div>
-      <div id="social">
+      <div class="social">
         <img src="./assets/social.svg">
       </div>
-      <div id="medical">
+      <div class="medical">
         <img src="./assets/medical.svg">
       </div>
-      <div id="product">
+      <div class="product">
         <img src="./assets/product.svg">
       </div>
-      <div id="government">
+      <div class="government">
         <img src="./assets/government.svg">
       </div>
-      <div id="transport">
+      <div class="transport">
         <img src="./assets/transport.svg">
       </div>
-      <div id="work">
+      <div class="work">
         <img src="./assets/work.svg">
       </div>
     </section>
@@ -163,31 +163,31 @@ h3 {
   width: 2em;
 }
 
-#category #economy {
+#category .economy {
   background-color: #53A31F;
 }
 
-#category #social {
+#category .social {
   background-color: #F29100;
 }
 
-#category #medical {
+#category .medical {
   background-color: #E94B0B;
 }
 
-#category #product {
+#category .product {
   background-color: #B00F81;
 }
 
-#category #government {
+#category .government {
   background-color: #0F2E91;
 }
 
-#category #transport {
+#category .transport {
   background-color: #0058B9;
 }
 
-#category #work {
+#category .work {
   background-color: #21A1CD;
 }
 /*h3 titles #c90c0f*/
