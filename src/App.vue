@@ -148,6 +148,7 @@ h3 {
   height: 100vh;
   padding-top: 1rem;
 }
+
 #category div {
   opacity: 30%;
   border: 1px solid darkgray;
@@ -155,6 +156,7 @@ h3 {
   padding: 0.5rem;
   margin: 0.5rem 0;
 }
+
 #category div:hover {
   opacity: 100%;
 }
