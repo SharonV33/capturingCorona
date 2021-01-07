@@ -157,9 +157,9 @@ h3 {
   margin: 0.5rem 0;
 }
 
-#category div:hover {
-  opacity: 100%;
-}
+/*#category div:hover {*/
+  /*opacity: 100%;*/
+/*}*/
 
 #category div img {
   width: 2em;
