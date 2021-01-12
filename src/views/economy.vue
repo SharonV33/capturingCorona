@@ -10,7 +10,7 @@
           <SmallArticle />
       </section>
       <section class="smallArticle">
-          <SmallArticle />
+          <NegativeSmallArticle />
       </section>
       <section class="largeArticle">
           <GraphArticle />
@@ -21,13 +21,15 @@
 <script>
 // @ is an alias to /src
 import GraphArticle from '@/components/GraphArticle.vue'
-import SmallArticle from'@/components/SmallArticle.vue'
+import SmallArticle from '@/components/SmallArticle.vue'
+import NegativeSmallArticle from '@/components/NegativeSmallArticle.vue'
 
 export default {
   name: 'economy',
     components: {
         GraphArticle,
-        SmallArticle
+        SmallArticle,
+        NegativeSmallArticle
     }
 }
 </script>

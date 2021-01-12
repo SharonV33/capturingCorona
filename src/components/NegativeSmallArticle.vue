@@ -1,0 +1,54 @@
+<template>
+    <section class="iconArticle">
+        <h3 class="iconTitle">Hoe ontwikkelt de omzet van de horecasector zich?</h3>
+        <i class="fas fa-cheeseburger" id="negative"></i>
+        <h3 id="percentage">-8%</h3>
+
+    </section>
+</template>
+
+<script>
+    export default {
+        name: "NegativeSmallArticle"
+    }
+</script>
+
+<style scoped>
+    .iconArticle {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-auto-flow: column;
+        justify-items: center;
+        max-height: 6rem;
+        padding: 1rem;
+    }
+
+    .iconArticle .iconTitle {
+        text-align: center;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        font-size: 0.7rem;
+        margin-bottom: 0.5rem;
+        margin-top: 0;
+    }
+
+    .iconArticle i {
+        grid-column-start: 1;
+        font-size: 2rem;
+    }
+
+    .iconArticle #percentage {
+        grid-column-start: 2;
+        font-size: 2rem;
+        margin: 0;
+    }
+
+    .iconArticle #positive {
+        color: green;
+    }
+
+    .iconArticle #negative {
+        color: red;
+    }
+
+</style>
