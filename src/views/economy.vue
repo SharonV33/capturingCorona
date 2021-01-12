@@ -38,7 +38,10 @@ export default {
         display: grid;
         grid-template-columns: 20% 20% 20% 20%;
         grid-auto-flow: column;
+        align-items: start;
+        align-content: start;
         grid-column-gap: 2rem;
+        grid-row-gap: 1rem;
         width:80%;
         padding-top: 1rem;
     }
@@ -50,8 +53,6 @@ export default {
         grid-column-start: 1;
         grid-column-end: 5;
         padding-left: 1rem;
-        margin-bottom: 2rem;
-        margin-top: 1rem;
     }
 
     .smallArticle {

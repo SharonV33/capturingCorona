@@ -19,7 +19,7 @@
         grid-template-columns: 50% 50%;
         grid-auto-flow: column;
         justify-items: center;
-        max-height: 2em;
+        max-height: 6rem;
         padding: 1rem;
     }
 
@@ -27,7 +27,7 @@
         grid-column-start: 1;
         grid-column-end: 3;
         font-size: 0.5rem;
-        margin-bottom: 0;
+        margin-bottom: 0.5rem;
     }
 
     .iconArticle i {
