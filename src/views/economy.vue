@@ -1,10 +1,19 @@
 <template>
-  <div>
-      <section class="largeArticle">
-          <GraphArticle />
+  <div class="contentOverview">
+      <section class="smallArticle">
+          <SmallArticle />
       </section>
       <section class="smallArticle">
           <SmallArticle />
+      </section>
+      <section class="smallArticle">
+          <SmallArticle />
+      </section>
+      <section class="smallArticle">
+          <SmallArticle />
+      </section>
+      <section class="largeArticle">
+          <GraphArticle />
       </section>
   </div>
 </template>
@@ -24,27 +33,30 @@ export default {
 </script>
 
 <style scoped>
-    div {
+
+    .contentOverview {
         display: grid;
-        grid-template-columns: 10% 40% 40% 10%;
+        grid-template-columns: 20% 20% 20% 20%;
         grid-auto-flow: column;
+        grid-column-gap: 2rem;
+        width:80%;
+        padding-top: 1rem;
     }
 
     .largeArticle {
         border: 1px solid darkgray;
         border-radius: 9px;
-        grid-column-start: 2;
-        grid-column-end: 3;
-        width: 70vw;
+        grid-row-start: 2;
+        grid-column-start: 1;
+        grid-column-end: 5;
         padding-left: 1rem;
         margin-bottom: 2rem;
+        margin-top: 1rem;
     }
 
     .smallArticle {
-        grid-column-start: 2;
         border: 1px solid darkgray;
         border-radius: 9px;
-        width: 35vw;
-
+        grid-row-start: 1;
     }
 </style>

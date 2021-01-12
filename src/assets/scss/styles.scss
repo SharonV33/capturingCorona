@@ -145,6 +145,12 @@ h3 {
   background-color: #21A1CD;
 }
 
+.bodyContent {
+  width: 94vw;
+  display: flex;
+  justify-content: center;
+}
+
 router-view {
   display: inline;
 }

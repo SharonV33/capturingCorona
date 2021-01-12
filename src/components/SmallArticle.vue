@@ -1,7 +1,8 @@
 <template>
-    <section>
-        <h3>Hoe ontwikkelt de omzet van de transportsector zich?</h3>
+    <section class="iconArticle">
+        <h3 class="iconTitle">Hoe ontwikkelt de omzet van de transportsector zich?</h3>
         <i class="fas fa-truck"></i>
+        <h3 id="percentage">+21%</h3>
 
     </section>
 </template>
@@ -13,27 +14,38 @@
 </script>
 
 <style scoped>
-    section {
+    .iconArticle {
         display: grid;
         grid-template-columns: 50% 50%;
         grid-auto-flow: column;
+        justify-items: center;
+        max-height: 2em;
+        padding: 1rem;
     }
 
-    h3 {
+    .iconArticle .iconTitle {
         grid-column-start: 1;
         grid-column-end: 3;
+        font-size: 0.5rem;
+        margin-bottom: 0;
     }
 
-    img {
-        width: 30rem;
+    .iconArticle i {
         grid-column-start: 1;
+        font-size: 2rem;
     }
 
-   #positive {
+    .iconArticle #percentage {
+        grid-column-start: 2;
+        font-size: 2rem;
+        margin: 0;
+    }
+
+   .iconArticle #positive {
        color: green;
     }
 
-    #negative {
+    .iconArticle #negative {
         color: red;
     }
 

@@ -58,8 +58,9 @@
           <img src="@/assets/work.svg">
         </div>
       </section>
-
-      <router-view/>
+      <section class="bodyContent">
+        <router-view/>
+      </section>
     </section>
 
   </div>
