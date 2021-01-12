@@ -1,15 +1,36 @@
 <template>
     <section class="iconArticle">
-        <h3 class="iconTitle">Hoe ontwikkelt de omzet van de transportsector zich?</h3>
-        <i class="fas fa-truck" id="positive"></i>
-        <h3 id="percentage">+21%</h3>
+        <h3 class="iconTitle">{{question}}?</h3>
+        <i :class="smallArticleIcon" :id="positiveOrNegative"></i>
+        <h3 id="percentage">{{smallArticlePercentage}}</h3>
 
     </section>
 </template>
 
 <script>
     export default {
-        name: "SmallArticle"
+        name: "SmallArticle",
+        props: {
+            smallArticleIcon: String,
+            question: String,
+            smallArticlePercentage: String,
+            positiveOrNegative: String,
+        },
+        mounted() {
+            this.plusOrMinus()
+        },
+        methods: {
+            plusOrMinus: function() {
+                const percentage = this.smallArticlePercentage
+                const firstLetter = (percentage.charAt(0))
+                if (firstLetter === "+") {
+                    // this.positiveOrNegative = "positive"
+                }
+                else if (firstLetter === "-") {
+                    // this.positiveOrNegative = "negative"
+                }
+            }
+        }
     }
 </script>
 

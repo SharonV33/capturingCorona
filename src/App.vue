@@ -37,7 +37,9 @@
     <section class="body">
       <section id="category">
         <div class="economy">
+          <router-link to="/">
           <img src="@/assets/economy.svg">
+          </router-link>
         </div>
         <div class="social">
           <img src="@/assets/social.svg">
@@ -52,7 +54,9 @@
           <img src="@/assets/government.svg">
         </div>
         <div class="transport">
-          <img src="@/assets/transport.svg">
+          <router-link to="/transport">
+            <img src="@/assets/transport.svg">
+          </router-link>
         </div>
         <div class="work">
           <img src="@/assets/work.svg">

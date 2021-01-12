@@ -1,13 +1,13 @@
 <template>
   <div class="contentOverview">
       <section class="smallArticle">
-          <SmallArticle />
+          <SmallArticle question="Hoe ontwikkelt de omzet van de transport sector" smallArticleIcon="fas fa-truck" smallArticlePercentage="+12%"/>
       </section>
       <section class="smallArticle">
-          <SmallArticle />
+          <SmallArticle question="Hoe ontwikkeld de omzet van de horeca sector" smallArticleIcon="fas fa-beer" smallArticlePercentage="-99%"/>
       </section>
       <section class="smallArticle">
-          <SmallArticle />
+          <SmallArticle question="Hoe ontwikkeld de omzet van de bouw sector" smallArticleIcon="fas fa-construction" smallArticlePercentage="+99%"/>
       </section>
       <section class="smallArticle">
           <NegativeSmallArticle />
