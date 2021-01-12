@@ -1,7 +1,7 @@
 <template>
     <section class="iconArticle">
         <h3 class="iconTitle">Hoe ontwikkelt de omzet van de transportsector zich?</h3>
-        <i class="fas fa-truck"></i>
+        <i class="fas fa-truck" id="positive"></i>
         <h3 id="percentage">+21%</h3>
 
     </section>
@@ -24,10 +24,12 @@
     }
 
     .iconArticle .iconTitle {
+        text-align: center;
         grid-column-start: 1;
         grid-column-end: 3;
-        font-size: 0.5rem;
+        font-size: 0.7rem;
         margin-bottom: 0.5rem;
+        margin-top: 0;
     }
 
     .iconArticle i {
