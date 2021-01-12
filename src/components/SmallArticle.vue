@@ -40,7 +40,7 @@
         grid-template-columns: 50% 50%;
         grid-auto-flow: column;
         justify-items: center;
-        max-height: 6rem;
+        height: 6rem;
         padding: 1rem;
     }
 
