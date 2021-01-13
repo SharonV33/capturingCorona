@@ -1,13 +1,17 @@
 <template>
   <div class="contentOverview">
     <section class="smallArticle">
-      <SmallArticle question="oe ontwikkelt het aantal passagiers dat van en naar nationale luchthavens vliegt zich" smallArticleIcon="fas fa-plane" smallArticlePercentage="+12%"/>
+      <SmallArticle
+        question="oe ontwikkelt het aantal passagiers dat van en naar nationale luchthavens vliegt zich"
+        icon="fas fa-plane"
+        :percentage="12"
+      />
     </section>
     <section class="smallArticle">
-      <SmallArticle question="Hoeveel minder reizen we met het openbaar vervoer" smallArticleIcon="fas fa-train" smallArticlePercentage="-99%"/>
+      <SmallArticle question="Hoeveel minder reizen we met het openbaar vervoer" icon="fas fa-train" :percentage="-99"/>
     </section>
     <section class="smallArticle">
-      <SmallArticle question="Hoe ontwikkelt het goederenvervoer zich" smallArticleIcon="fas fa-truck" smallArticlePercentage="+99%"/>
+      <SmallArticle question="Hoe ontwikkelt het goederenvervoer zich" icon="fas fa-truck" :percentage="99"/>
     </section>
     <section class="smallArticle">
       <NegativeSmallArticle />

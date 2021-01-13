@@ -1,9 +1,8 @@
 <template>
     <section class="iconArticle">
         <h3 class="iconTitle">{{question}}?</h3>
-        <i :class="smallArticleIcon" :id="positiveOrNegative"></i>
-        <h3 id="percentage">{{smallArticlePercentage}}</h3>
-
+        <i :class="iconClass" />
+        <h3 id="percentage">{{ percentage }}%</h3>
     </section>
 </template>
 
@@ -11,30 +10,21 @@
     export default {
         name: "SmallArticle",
         props: {
-            smallArticleIcon: String,
-            question: String,
-            smallArticlePercentage: String,
-            positiveOrNegative: String,
+            icon: { type: String, required: true },
+            question: { type: String, required: true },
+            percentage: { type: Number, required: true },
         },
-        mounted() {
-            this.plusOrMinus()
-        },
-        methods: {
-            plusOrMinus: function() {
-                const percentage = this.smallArticlePercentage
-                const firstLetter = (percentage.charAt(0))
-                if (firstLetter === "+") {
-                    // this.positiveOrNegative = "positive"
-                }
-                else if (firstLetter === "-") {
-                    // this.positiveOrNegative = "negative"
-                }
+        computed: {
+            iconClass () {
+                return this.percentage < 0
+                    ? `${this.icon} negative`
+                    : `${this.icon} positive`
             }
         }
     }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
     .iconArticle {
         display: grid;
         grid-template-columns: 50% 50%;
@@ -42,6 +32,14 @@
         justify-items: center;
         height: 6rem;
         padding: 1rem;
+
+        .positive {
+            color: green;
+        }
+
+        .negative {
+            color: red;
+        }
     }
 
     .iconArticle .iconTitle {
@@ -62,14 +60,6 @@
         grid-column-start: 2;
         font-size: 2rem;
         margin: 0;
-    }
-
-   .iconArticle #positive {
-       color: green;
-    }
-
-    .iconArticle #negative {
-        color: red;
     }
 
 </style>
