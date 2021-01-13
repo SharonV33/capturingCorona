@@ -37,26 +37,34 @@
     <section class="body">
       <section id="category">
         <div class="economy">
-          <router-link to="/">
-          <img src="@/assets/economy.svg">
+          <router-link to="/economy">
+            <img src="@/assets/economy.svg">
             <p>Economie</p>
           </router-link>
         </div>
         <div class="social">
-          <img src="@/assets/social.svg">
-          <p>Sociaal</p>
+          <router-link to="/social">
+            <img src="@/assets/social.svg">
+            <p>Sociaal</p>
+          </router-link>
         </div>
         <div class="medical">
-          <img src="@/assets/medical.svg">
-          <p>Medisch</p>
+          <router-link to="/medical">
+            <img src="@/assets/medical.svg">
+            <p>Medisch</p>
+          </router-link>
         </div>
         <div class="product">
-          <img src="@/assets/product.svg">
-          <p>product & handel</p>
+          <router-link to="/product">
+            <img src="@/assets/product.svg">
+            <p>product & handel</p>
+          </router-link>
         </div>
         <div class="government">
-          <img src="@/assets/government.svg">
-          <p>Overheid</p>
+          <router-link to="/government">
+            <img src="@/assets/government.svg">
+            <p>Overheid</p>
+          </router-link>
         </div>
         <div class="transport">
           <router-link to="/transport">
@@ -65,8 +73,10 @@
           </router-link>
         </div>
         <div class="work">
-          <img src="@/assets/work.svg">
-          <p>Werk & look</p>
+          <router-link to="/work">
+            <img src="@/assets/work.svg">
+            <p>Werk & look</p>
+          </router-link>
         </div>
       </section>
       <section class="bodyContent">

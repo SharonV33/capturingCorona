@@ -12,7 +12,7 @@
         props: {
             icon: { type: String, required: true },
             question: { type: String, required: true },
-            percentage: { type: Number, required: true },
+            percentage: { type: String, required: true },
         },
         computed: {
             iconClass () {

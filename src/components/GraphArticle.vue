@@ -23,15 +23,38 @@
         <!--img used to simulate chart until real chart is build-->
         <img src="../assets/testchart.png"/>
         </section>
-        <section class="readMoreSection">
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.</p>
+
+        <button v-on:Click="hideText">
+            <i class="fas fa-chevron-left"></i>
+            <i class="fas fa-chevron-left"></i>
+            Lees meer
+        </button>
+        <section class="readMoreSection hideReadMore" :id="articleTitle">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo,
+                fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis
+                vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus
+                elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
+                vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus
+                viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.
+                Curabitur ullamcorper ultricies nisi. Nam eget dui.</p>
         </section>
     </section>
 </template>
 
 <script>
     export default {
-        name: "GraphArticle"
+        name: "GraphArticle",
+        props: {
+            articleTitle: {type: String, required: true}
+        },
+        methods: {
+            hideText: function () {
+                const readMore = document.getElementById(this.articleTitle)
+                readMore.classList.toggle("hideReadMore")
+            }
+        }
     }
 </script>
 
@@ -39,6 +62,7 @@
 
     .articleContainer {
         display: flex;
+        max-height: 50rem;
     }
 
     .subject {
@@ -48,7 +72,6 @@
     form {
         display: flex;
         flex-wrap: wrap;
-        width: 80%;
     }
 
     label {
@@ -62,14 +85,30 @@
 
     img {
         width: 100%;
+        height: 20rem;
         padding: 2rem 0;
         margin-right: 2rem;
+    }
+
+    button {
+        background-color: #ffffff;
+        border: 2px solid #271d6c;
+        position: relative;
+        align-self: flex-end;
+        height: 2rem;
+        width: 25rem;
+        padding: 0.3rem 1rem;
+        z-index: 3;
     }
 
     .readMoreSection {
         border-left: 1px solid darkgray;
         width: 80%;
         padding: 0 2vw;
+    }
+
+    .hideReadMore {
+        display: none;
     }
 
 </style>

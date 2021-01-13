@@ -12,8 +12,8 @@
       <section class="smallArticle">
           <NegativeSmallArticle />
       </section>
-      <section class="largeArticle">
-          <GraphArticle />
+      <section class="largeArticle" >
+          <GraphArticle articleTitle="hoi"/>
       </section>
   </div>
 </template>
