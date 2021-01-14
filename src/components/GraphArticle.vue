@@ -19,9 +19,9 @@
             <input type="checkbox" id="wholesale">
             <label for="wholesale">Groothandel</label>
         </form>
-        <svg class="chart"></svg>
+        <lineChart />
         <!--img used to simulate chart until real chart is build-->
-        <img src="../assets/testchart.png"/>
+        <!--<img src="../assets/testchart.png"/>-->
         </section>
 
         <button v-on:Click="hideText">
@@ -44,8 +44,12 @@
 </template>
 
 <script>
+    import lineChart from '@/components/lineChart.vue'
     export default {
         name: "GraphArticle",
+        components: {
+            lineChart
+        },
         props: {
             articleTitle: {type: String, required: true}
         },
