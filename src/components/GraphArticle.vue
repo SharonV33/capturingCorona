@@ -19,7 +19,7 @@
             <input type="checkbox" id="wholesale">
             <label for="wholesale">Groothandel</label>
         </form>
-        <lineChart />
+        <lineChart class="line"/>
         <!--img used to simulate chart until real chart is build-->
         <!--<img src="../assets/testchart.png"/>-->
         </section>
@@ -66,7 +66,7 @@
 
     .articleContainer {
         display: flex;
-        max-height: 50rem;
+        max-height: 40rem;
     }
 
     .subject {
@@ -83,15 +83,8 @@
         margin-right: 1.5rem;
     }
 
-    .chart {
-        display: none;
-    }
-
-    img {
-        width: 100%;
-        height: 20rem;
-        padding: 2rem 0;
-        margin-right: 2rem;
+    .line {
+        height: 100rem;
     }
 
     button {

@@ -1,6 +1,6 @@
 <template>
     <section>
-        <svg class="lineChart" width="960" height="500"></svg>
+        <svg id="myChart" class="lineChart"></svg>
     </section>
 </template>
 
@@ -26,8 +26,6 @@
         methods: {
             buildLineChart: function () {
                 const svg = select("svg")
-                const width = svg.attr('width')
-                const height = svg.attr('height')
                 const data = dataFile
 
                 const render = data => {
@@ -39,7 +37,13 @@
                     const yValue = d => d.Omzetontwikkeling
                     const yAxisLabel = 'Omzetontwikkeling'
 
-                    const margin = { top: 60, right: 40, bottom: 88, left: 105 }
+                    console.log()
+
+                    const margin = {top: 60, right: 10, bottom: 100, left: 100}
+                   const width = parseInt(svg.style('width'))
+                    const height = parseInt(svg.style('height'))
+
+                    // const margin = { top: 60, right: 40, bottom: 88, left: 105 }
                     const innerWidth = width - margin.left - margin.right
                     const innerHeight = height - margin.top - margin.bottom
 
@@ -113,11 +117,22 @@
 </script>
 
 <style>
+
+    svg {
+        width: 100%;
+        max-width: 100%;
+        height: 30%;
+    }
+
     svg .line-path {
         fill: none;
         stroke: maroon;
         stroke-width: 5;
         stroke-linejoin: round;
+    }
+
+    svg g {
+        max-width: 100%;
     }
 
     svg text {
@@ -127,15 +142,15 @@
     svg .tick text {
         font-size: 1em;
         fill: #635F5D;
-
         text-anchor: start;
-        width: 5em;
     }
 
     .xaxis text {
         transform: rotate(70deg);
         display: inline-block;
         overflow-wrap: normal;
+        overflow: auto;
+        width: 100%;
     }
     svg line {
         opacity: 0.1;
