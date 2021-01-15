@@ -20,6 +20,7 @@
             <label for="wholesale">Groothandel</label>
         </form>
         <lineChart class="line"/>
+
         <!--img used to simulate chart until real chart is build-->
         <!--<img src="../assets/testchart.png"/>-->
         </section>
@@ -66,7 +67,8 @@
 
     .articleContainer {
         display: flex;
-        max-height: 40rem;
+        max-height: 50rem;
+        flex-wrap: wrap;
     }
 
     .subject {
@@ -83,8 +85,12 @@
         margin-right: 1.5rem;
     }
 
-    .line {
+    .chart {
+        width: 80%;
+        padding: 2rem 0;
+        margin-right: 2rem;
         height: 100rem;
+
     }
 
     button {

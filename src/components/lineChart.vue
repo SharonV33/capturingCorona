@@ -147,7 +147,6 @@
 
     .xaxis text {
         transform: rotate(70deg);
-        display: inline-block;
         overflow-wrap: normal;
         overflow: auto;
         width: 100%;
