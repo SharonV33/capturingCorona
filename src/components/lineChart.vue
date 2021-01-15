@@ -134,8 +134,8 @@
 
     .xaxis text {
         transform: rotate(70deg);
+        display: inline-block;
         overflow-wrap: normal;
-        width: 3em;
     }
     svg line {
         opacity: 0.1;
