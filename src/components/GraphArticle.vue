@@ -88,7 +88,6 @@
         padding: 2rem 0;
         margin-right: 2rem;
         height: 100%;
-
     }
 
     button {

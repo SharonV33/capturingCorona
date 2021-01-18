@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="footerContent">
         <section class="services">
             <h3>Onze diensten</h3>
             <p>Cijfers/StatLine</p>
@@ -32,8 +32,13 @@
         </section>
         <section class="siteInfo">
             <h3>Over deze site</h3>
-            <p>home</p>
+            <p>Home</p>
             <p>Copyright</p>
+            <p>Privacy</p>
+            <p>Cookies</p>
+            <p>Toegankelijkheid</p>
+            <p>Kwetsbaarheid melden</p>
+            <p>Archief</p>
         </section>
     </div>
 </template>
@@ -45,5 +50,21 @@
 </script>
 
 <style scoped>
+    .footerContent {
+        background: #E9E9E9;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 2rem 10rem;
+    }
+
+    .footerContent section h3 {
+        color: #000000;
+        font-size: 0.8rem;
+    }
+
+    .footerContent section p {
+        font-size: 0.8em;
+    }
 
 </style>

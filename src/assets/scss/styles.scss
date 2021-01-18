@@ -5,7 +5,6 @@ $fa-font-path: "./assets/webfonts";
 @import './fontawesome/regular.scss';
 @import './fontawesome/brands.scss';
 
-// STYLES HERE
 * {
   font-family: 'Soho W01 Medium',sans-serif;
   font-size: 1rem;
@@ -172,6 +171,7 @@ h3 {
   width: 94vw;
   display: flex;
   justify-content: center;
+  margin-bottom: 5rem;
 }
 
 router-view {
