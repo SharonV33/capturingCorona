@@ -1,10 +1,10 @@
 <template>
     <div class="contentOverview">
-        <section class="largeArticle" >
-            <GraphArticle articleTitle="hoi"/>
+        <section class="largeArticleHome" >
+            <GraphArticle articleTitle="hoi" class="home"/>
         </section>
-        <section class="largeArticle" >
-            <GraphArticle articleTitle="doei"/>
+        <section class="largeArticleHome" >
+            <GraphArticle articleTitle="doei" class="home"/>
         </section>
 
     </div>
@@ -13,20 +13,16 @@
 <script>
     // @ is an alias to /src
     import GraphArticle from '@/components/GraphArticle.vue'
-    // import SmallArticle from '@/components/SmallArticle.vue'
-    // import NegativeSmallArticle from '@/components/NegativeSmallArticle.vue'
 
     export default {
         name: 'economy',
         components: {
-            GraphArticle,
-            // SmallArticle,
-            // NegativeSmallArticle
+            GraphArticle
         }
     }
 </script>
 
-<style scoped>
+<style>
 
     .contentOverview {
         display: grid;
@@ -40,10 +36,29 @@
         padding-top: 1rem;
     }
 
-    .largeArticle {
-        grid-column-end: span 2;
-        height: 35rem;
+    .largeArticleHome {
+        grid-column-start: span 2;
         width: 100%;
     }
+
+    .home {
+        min-height: 38rem!important;
+        flex-direction: column!important;
+        justify-content: space-between;
+    }
+
+    .home .mainContent {
+        height: 100%;
+    }
+    .home button {
+        align-self: baseline;
+        width: 100%;
+    }
+
+
+
+
+
+
 
 </style>

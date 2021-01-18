@@ -65,8 +65,16 @@
     .articleContainer {
         background-color: #252A4A;
         display: flex;
-        height: 50rem;
-        flex-wrap: wrap;
+        min-height: 50rem;
+        flex-direction: row;
+        border-radius: 15px;
+        padding-left: 2rem;
+    }
+
+    .mainContent {
+        z-index: 0;
+        position: relative;
+        width: 100%;
     }
 
     .subject {
@@ -84,10 +92,10 @@
     }
 
     .line {
-        width: 80%;
+        width: 100%;
         padding: 2rem 0;
         margin-right: 2rem;
-        height: 100%;
+        height: 70%;
     }
 
     button {
@@ -106,6 +114,7 @@
         width: 80%;
         padding: 0 2vw;
         align-self: flex-end;
+        color: #ffffff;
     }
 
     .hideReadMore {

@@ -26,6 +26,9 @@
         mounted() {
             this.buildLineChart()
         },
+        updated() {
+            this.buildLineChart()
+        },
         methods: {
             buildLineChart: function () {
                 const svg = select(`.${this.articleTitle}`)
