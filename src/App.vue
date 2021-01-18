@@ -75,7 +75,7 @@
         <div class="work">
           <router-link to="/work">
             <img src="@/assets/work.svg" alt="work icon">
-            <a>Werk & look</a>
+            <a>Werk & loon</a>
           </router-link>
         </div>
       </section>
