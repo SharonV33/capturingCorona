@@ -44,19 +44,29 @@
     .home {
         min-height: 38rem!important;
         flex-direction: column!important;
-        justify-content: space-between;
+        justify-content: space-between!important;
+        align-items: stretch!important;
     }
 
     .home .mainContent {
-        height: 100%;
+        height: 37rem!important;
+        align-self: stretch!important;
+        display: flex;
+        flex-direction: column;
     }
     .home button {
         align-self: baseline;
         width: 100%;
     }
 
+    .home .line {
+        align-self: stretch!important;
+        height: 100%!important;
+    }
 
-
+    .home .line svg{
+        height: 100%!important;
+    }
 
 
 
