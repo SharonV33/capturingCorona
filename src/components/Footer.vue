@@ -40,6 +40,24 @@
             <p>Kwetsbaarheid melden</p>
             <p>Archief</p>
         </section>
+        <section class="bottomFooter">
+            <section class="socialIcons">
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-instagram-square"></i>
+                <i class="fab fa-youtube-square"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fas fa-rss-square"></i>
+            </section>
+            <section>
+                <p>Publicatieplanning</p>
+                <p>Abonnementen</p>
+            </section>
+        </section>
+        <section class="copyright">
+            <h2>Voor wat er feitelijk gebeurt</h2>
+            <p><i class="far fa-copyright"></i>CBS 2021</p>
+        </section>
     </div>
 </template>
 
@@ -52,10 +70,10 @@
 <style scoped>
     .footerContent {
         background: #E9E9E9;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        padding: 2rem 10rem;
+        display: grid;
+        grid-template-columns: 20% auto;
+        grid-auto-flow: row;
+        padding: 2rem 15rem 0 15rem;
     }
 
     .footerContent section h3 {
@@ -65,6 +83,57 @@
 
     .footerContent section p {
         font-size: 0.8em;
+    }
+
+    .bottomFooter {
+        grid-column-start: span 4;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5rem;
+        margin-bottom: 3rem;
+    }
+
+    .bottomFooter .socialIcons {
+        width: 30rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    .bottomFooter .socialIcons i {
+        font-size: 3em;
+        color: #555555;
+    }
+
+    .bottomFooter section:nth-child(2) {
+        width: 20rem;
+        display: flex;
+
+    }
+    .bottomFooter section:nth-child(2) {
+        width: 20rem;
+        display: flex;
+    }
+
+     .bottomFooter section:nth-child(2) p {
+        margin-right: 2rem;
+    }
+    .copyright {
+        background-color: #ffffff;
+        width: 71.5vw;
+        margin-left: -15rem;
+        display: flex;
+    }
+
+    .copyright {
+        color: #163A72!important;
+        justify-content: space-between;
+    }
+
+    .copyright {
+        padding: 0.5rem 15rem;
+    }
+
+    .copyright p {
+        margin-right: 6rem;
     }
 
 </style>
