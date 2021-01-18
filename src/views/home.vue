@@ -3,15 +3,10 @@
         <section class="largeArticle" >
             <GraphArticle articleTitle="hoi"/>
         </section>
-
         <section class="largeArticle" >
             <GraphArticle articleTitle="doei"/>
         </section>
 
-
-        <!--<section class="largeArticle" >-->
-            <!--<GraphArticle articleTitle="hoi"/>-->
-        <!--</section>-->
     </div>
 </template>
 
@@ -46,11 +41,9 @@
     }
 
     .largeArticle {
-        border: 1px solid darkgray;
         grid-column-end: span 2;
+        height: 35rem;
         width: 100%;
-        border-radius: 9px;
-        padding-left: 1rem;
     }
 
 </style>

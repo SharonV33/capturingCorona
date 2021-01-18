@@ -59,17 +59,12 @@
   }
 
   .largeArticle {
-    border: 1px solid darkgray;
-    border-radius: 9px;
     grid-row-start: 2;
     grid-column-start: 1;
     grid-column-end: 5;
-    padding-left: 1rem;
   }
 
   .smallArticle {
-    border: 1px solid darkgray;
-    border-radius: 9px;
     grid-row-start: 1;
   }
 </style>

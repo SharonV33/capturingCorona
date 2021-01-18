@@ -39,43 +39,43 @@
         <div class="economy">
           <router-link to="/economy">
             <img src="@/assets/economy.svg">
-            <p>Economie</p>
+            <a>Economie</a>
           </router-link>
         </div>
         <div class="social">
           <router-link to="/social">
             <img src="@/assets/social.svg">
-            <p>Sociaal</p>
+            <a>Sociaal</a>
           </router-link>
         </div>
         <div class="medical">
           <router-link to="/medical">
             <img src="@/assets/medical.svg">
-            <p>Medisch</p>
+            <a>Medisch</a>
           </router-link>
         </div>
         <div class="product">
           <router-link to="/product">
             <img src="@/assets/product.svg">
-            <p>product & handel</p>
+            <a>product & handel</a>
           </router-link>
         </div>
         <div class="government">
           <router-link to="/government">
             <img src="@/assets/government.svg">
-            <p>Overheid</p>
+            <a>Overheid</a>
           </router-link>
         </div>
         <div class="transport">
           <router-link to="/transport">
             <img src="@/assets/transport.svg">
-            <p>Transport & vervoer</p>
+            <a>Transport & vervoer</a>
           </router-link>
         </div>
         <div class="work">
           <router-link to="/work">
             <img src="@/assets/work.svg">
-            <p>Werk & look</p>
+            <a>Werk & look</a>
           </router-link>
         </div>
       </section>
@@ -83,8 +83,24 @@
         <router-view/>
       </section>
     </section>
+    <section class="footer">
+      <pageFooter />
+    </section>
   </div>
 </template>
+
+<script>
+  // @ is an alias to /src
+  import pageFooter from '@/components/Footer.vue'
+
+
+  export default {
+    name: 'app',
+    components: {
+      pageFooter
+    }
+  }
+</script>
 
 <style lang="scss">
   @import 'assets/scss/styles.scss';

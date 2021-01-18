@@ -19,10 +19,7 @@
             <input type="checkbox" id="wholesale">
             <label for="wholesale">Groothandel</label>
         </form>
-        <lineChart class="line"/>
-
-        <!--img used to simulate chart until real chart is build-->
-        <!--<img src="../assets/testchart.png"/>-->
+        <lineChart class="line" :articleTitle="articleTitle" />
         </section>
 
         <button v-on:Click="hideText">
@@ -66,13 +63,14 @@
 <style scoped>
 
     .articleContainer {
+        background-color: #252A4A;
         display: flex;
-        max-height: 50rem;
+        height: 50rem;
         flex-wrap: wrap;
     }
 
     .subject {
-        color: darkgray;
+        color: #ffffff;
     }
 
     form {
@@ -81,15 +79,15 @@
     }
 
     label {
-        color: #091d23;
+        color: #ffffff;
         margin-right: 1.5rem;
     }
 
-    .chart {
+    .line {
         width: 80%;
         padding: 2rem 0;
         margin-right: 2rem;
-        height: 100rem;
+        height: 100%;
 
     }
 
@@ -108,6 +106,7 @@
         border-left: 1px solid darkgray;
         width: 80%;
         padding: 0 2vw;
+        align-self: flex-end;
     }
 
     .hideReadMore {

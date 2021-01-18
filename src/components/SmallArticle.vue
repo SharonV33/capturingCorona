@@ -24,25 +24,20 @@
     }
 </script>
 
-<style scoped lang="scss">
+<style scoped>
     .iconArticle {
+        background-color: #252A4A;
+        border-radius: 15px;
         display: grid;
         grid-template-columns: 50% 50%;
         grid-auto-flow: column;
         justify-items: center;
         height: 6rem;
         padding: 1rem;
-
-        .positive {
-            color: green;
-        }
-
-        .negative {
-            color: red;
-        }
     }
 
     .iconArticle .iconTitle {
+        color: #ffffff;
         text-align: center;
         grid-column-start: 1;
         grid-column-end: 3;
@@ -57,9 +52,17 @@
     }
 
     .iconArticle #percentage {
+        color: #ffffff;
         grid-column-start: 2;
         font-size: 2rem;
         margin: 0;
+    }
+    .positive {
+        color: green;
+    }
+
+    .negative {
+        color: red;
     }
 
 </style>

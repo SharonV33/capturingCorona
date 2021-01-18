@@ -9,7 +9,10 @@ $fa-font-path: "./assets/webfonts";
 * {
   font-family: 'Soho W01 Medium',sans-serif;
   font-size: 1rem;
-  margin-left: 0!important;
+}
+
+body {
+  margin: 0!important;
 }
 
 h1 {
@@ -31,10 +34,11 @@ h3 {
 
 
 #nav {
-  width: 100vw;
+  background-color: #ffffff;
   display: flex;
   justify-content: center;
   border-bottom: 1px solid #eee;
+  width: 100vw;
 }
 
 #nav img {
@@ -88,20 +92,26 @@ h3 {
 
 .body {
   display: flex;
+  background-color: #273B61;
 }
 
 #category {
-  background-color: #F4F4F4;
+  background-color: #252A4A;
+  border-radius: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 6vw;
-  height: 100vh;
+  height: 37rem;
   padding-top: 1rem;
+  margin: 2rem 0 0 2rem;
+  position: relative;
 }
 
 #category div {
   cursor: pointer;
+  display: flex;
+  flex-direction: row;
 }
 
 #category div:hover {
@@ -110,22 +120,24 @@ h3 {
 
 #category div img {
   border: 1px solid darkgray;
-  border-radius: 10px;
+  border-radius: 30px;
   opacity: 0.65;
   width: 2rem;
   padding: 0.5rem;
 }
 
-#category div p {
+#category div a {
+  text-decoration: none;
   text-align: center;
   font-size: 0.8rem;
   width: 3.5rem;
   margin-top: 0;
+  margin-bottom: 0.5rem;
 }
 
-#category div p:visited {
+#category div a:visited {
   text-decoration: none;
-  color: #000;
+  color: #ffffff;
 }
 
 #category .economy img {

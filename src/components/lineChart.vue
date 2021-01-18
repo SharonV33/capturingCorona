@@ -1,6 +1,6 @@
 <template>
     <section>
-        <svg id="myChart" class="lineChart"></svg>
+        <svg :class="articleTitle" class="lineChart"></svg>
     </section>
 </template>
 
@@ -20,12 +20,15 @@
 
     export default {
         name: "lineChart",
+        props: {
+            articleTitle: {type: String, required: true}
+        },
         mounted() {
             this.buildLineChart()
         },
         methods: {
             buildLineChart: function () {
-                const svg = select("svg")
+                const svg = select(`.${this.articleTitle}`)
                 const data = dataFile
 
                 const render = data => {
@@ -37,7 +40,6 @@
                     const yValue = d => d.Omzetontwikkeling
                     const yAxisLabel = 'Omzetontwikkeling'
 
-                    console.log()
 
                     const margin = {top: 60, right: 10, bottom: 100, left: 100}
                    const width = parseInt(svg.style('width'))
@@ -74,7 +76,7 @@
                         .attr('class', 'axis-label')
                         .attr('y', -60)
                         .attr('x', -innerHeight / 2)
-                        .attr('fill', 'black')
+                        .attr('fill', 'white')
                         .attr('transform', `rotate(-90)`)
                         .attr('text-anchor', 'middle')
                         .text(yAxisLabel)
@@ -121,12 +123,12 @@
     svg {
         width: 100%;
         max-width: 100%;
-        height: 30%;
+        height: 100%;
     }
 
     svg .line-path {
         fill: none;
-        stroke: maroon;
+        stroke: green;
         stroke-width: 5;
         stroke-linejoin: round;
     }
@@ -139,9 +141,13 @@
         font-family: sans-serif;
     }
 
+    svg .tick {
+        color: #ffffff;
+    }
+
     svg .tick text {
         font-size: 1em;
-        fill: #635F5D;
+        fill: #ffffff;
         text-anchor: start;
     }
 
@@ -156,11 +162,10 @@
     }
     svg .axis-label {
         font-size: 1em;
-        fill: #8E8883;
     }
 
     svg .title {
         font-size: 1em;
-        fill: #635F5D;
+        fill: #ffffff;
     }
 </style>
