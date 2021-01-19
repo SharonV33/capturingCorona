@@ -112,7 +112,7 @@
     .readMoreSection {
         border-left: 1px solid darkgray;
         width: 80%;
-        height: 100%;
+        min-height: 50rem;
         padding: 0 2vw;
         align-self: flex-end;
         color: #ffffff;

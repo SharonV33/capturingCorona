@@ -64,22 +64,25 @@ h3 {
 #search {
   width: 100vw;
   height: 4rem;
-  background-color: #F4F4F4;
-  display: flex;
-  justify-content: center;
-}
-
-#search form {
+  background-color: #273B61;
+  display: grid;
+  grid-template-columns: 10% 40% 40% 10%;
   align-items: center;
-  padding-top: 0.5rem;
 }
 
-#search form input {
-  height: 2rem;
-  width: 40vw;
+#search i, #search a {
+  color: #ffffff;
+  fill: #ffffff;
+  justify-self: center;
+}
+
+#search input {
   color: #091d23;
   border: 1px solid darkgray;
+  grid-column-start: 3;
   justify-self: end;
+  height: 2rem;
+  width: 20vw;
   border-radius: 15px;
   padding-left: 1rem;
 }
@@ -98,8 +101,7 @@ h3 {
   width: 6vw;
   height: 37rem;
   padding-top: 1rem;
-  margin: 2rem 0 0 2rem;
-  position: relative;
+  margin-left: 2rem;
 }
 
 #category div {

@@ -29,9 +29,10 @@
         </section>
       </section>
       <section id="search">
-        <form>
+        <router-link  to="/">
+          <i class="fas fa-th-large"> Overzicht</i>
+        </router-link>
           <input type="text" placeholder="Stel je vraag">
-        </form>
       </section>
     </section>
     <section class="body">
