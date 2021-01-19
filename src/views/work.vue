@@ -3,28 +3,22 @@
         <h1 class="pageTitle">Werk en loon</h1>
         <section class="smallArticle">
             <SmallArticle
-                    question="Hoe ontwikkelt het aantal passagiers dat van en naar nationale luchthavens vliegt zich"
+                    title="Hoe ontwikkelt het aantal passagiers dat van en naar nationale luchthavens vliegt zich"
                     icon="fas fa-plane"
                     :percentage="12"
             />
         </section>
         <section class="smallArticle">
             <SmallArticle
-                    question="Hoeveel minder reizen we met het openbaar vervoer"
+                    title="Hoeveel minder reizen we met het openbaar vervoer"
                     icon="fas fa-train"
                     :percentage="-99"/>
         </section>
         <section class="smallArticle">
             <SmallArticle
-                    question="Hoe ontwikkelt het goederenvervoer zich"
+                    title="Hoe ontwikkelt het goederenvervoer zich"
                     icon="fas fa-truck"
                     :percentage="99"/>
-        </section>
-        <section class="smallArticle">
-            <NegativeSmallArticle />
-        </section>
-        <section class="largeArticle">
-            <!--<GraphArticle />-->
         </section>
     </div>
 </template>
@@ -33,14 +27,12 @@
     // @ is an alias to /src
     // import GraphArticle from '@/components/GraphArticle.vue'
     import SmallArticle from '@/components/SmallArticle.vue'
-    import NegativeSmallArticle from '@/components/NegativeSmallArticle.vue'
 
     export default {
         name: 'work',
         components: {
             // GraphArticle,
-            SmallArticle,
-            NegativeSmallArticle
+            SmallArticle
         }
     }
 </script>

@@ -1,27 +1,26 @@
 <template>
   <div class="contentOverview">
     <h1 class="pageTitle">Transport en vervoer</h1>
-    <section class="smallArticle">
-      <SmallArticle
-        question="Hoe ontwikkelt het aantal passagiers dat van en naar nationale luchthavens vliegt zich"
-        icon="fas fa-plane"
-        :percentage="12"
-      />
+
+    <section class="largeArticle" >
+      <GraphArticle
+              articleTitle="Aantal pasagiers op luchthavens"
+              update="14-01-2021 10:12"/>
     </section>
     <section class="smallArticle">
       <SmallArticle
-              question="Hoeveel minder reizen we met het openbaar vervoer"
-              icon="fas fa-train"
-              :percentage="-99"/>
+              title="Hoeveel minder reizen we met het openbaar vervoer?"
+              subTitle="Gemiddelde van 10 maart tot 10 augustus t.o.v. 2019"
+              icon="fas fa-address-card"
+              update="14-01-2021 10:12"
+              :percentage="-560000"/>
     </section>
     <section class="smallArticle">
       <SmallArticle
-              question="Hoe ontwikkelt het goederenvervoer zich"
-              icon="fas fa-truck"
-              :percentage="99"/>
-    </section>
-    <section class="smallArticle">
-      <NegativeSmallArticle />
+              title="Verschil check-ins om 8:00"
+              icon="far fa-clock"
+              update="14-01-2021 10:12"
+              :percentage="-35"/>
     </section>
     <section class="largeArticle">
     </section>
@@ -30,16 +29,14 @@
 
 <script>
   // @ is an alias to /src
-  // import GraphArticle from '@/components/GraphArticle.vue'
+  import GraphArticle from '@/components/GraphArticle.vue'
   import SmallArticle from '@/components/SmallArticle.vue'
-  import NegativeSmallArticle from '@/components/NegativeSmallArticle.vue'
 
   export default {
     name: 'transport',
     components: {
-      // GraphArticle,
-      SmallArticle,
-      NegativeSmallArticle
+      GraphArticle,
+      SmallArticle
     }
   }
 </script>

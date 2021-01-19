@@ -1,8 +1,8 @@
 <template>
     <section class="articleContainer">
         <section class="mainContent">
-        <p class="subject">ontwikkeling omzet</p>
-        <h3>Hoe ontwikkeld de omzet van diverse sectoren?</h3>
+        <h3>{{articleTitle}}</h3>
+            <p class="lastUpdated">Laatst bijgewerkt: {{update}}</p>
         <form>
             <input type="checkbox" id="transport">
             <label for="transport">Transport</label>
@@ -23,8 +23,6 @@
         </section>
 
         <button v-on:Click="hideText">
-            <i class="fas fa-chevron-left"></i>
-            <i class="fas fa-chevron-left"></i>
             Lees meer
         </button>
         <section class="readMoreSection hideReadMore" :id="articleTitle">
@@ -49,7 +47,8 @@
             lineChart
         },
         props: {
-            articleTitle: {type: String, required: true}
+            articleTitle: {type: String, required: true},
+            update: {type: String}
         },
         methods: {
             hideText: function () {
@@ -80,6 +79,11 @@
     .subject {
         color: #ffffff;
     }
+    .lastUpdated {
+        color: #ffffff;
+        opacity: 0.4;
+        font-size: 0.5rem;
+    }
 
     form {
         display: flex;
@@ -101,11 +105,13 @@
     button {
         background-color: #ffffff;
         border: 2px solid #271d6c;
+        border-radius: 20px;
         position: relative;
         align-self: flex-end;
         height: 2rem;
-        width: 25rem;
+        min-width: 10rem;
         padding: 0.3rem 1rem;
+        margin: 0 1rem 2rem 0;
         z-index: 3;
     }
 
