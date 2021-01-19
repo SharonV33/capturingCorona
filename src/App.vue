@@ -30,7 +30,7 @@
       </section>
       <section id="search">
         <router-link  to="/">
-          <i class="fas fa-house"> Overzicht</i>
+          <i class="fa-solid fa-grid-2"> Overzicht</i>
         </router-link>
           <input type="text" placeholder="Stel je vraag">
       </section>

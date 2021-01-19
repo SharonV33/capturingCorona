@@ -137,31 +137,35 @@ h3 {
   color: #ffffff;
 }
 
-#category .economy img {
+#category div img {
+  background-color: #273B61;
+}
+
+#category .economy .router-link-active img {
   background-color: #53A31F;
 }
 
-#category .social img {
+#category .social .router-link-active img {
   background-color: #F29100;
 }
 
-#category .medical img {
+#category .medical .router-link-active img {
   background-color: #E94B0B;
 }
 
-#category .product img {
+#category .product .router-link-active img {
   background-color: #B00F81;
 }
 
-#category .government img {
+#category .government .router-link-active img {
   background-color: #0F2E91;
 }
 
-#category .transport img {
+#category .transport .router-link-active img {
   background-color: #0058B9;
 }
 
-#category .work img {
+#category .work  .router-link-active img {
   background-color: #21A1CD;
 }
 
