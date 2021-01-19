@@ -38,7 +38,7 @@
                 </section>
             </section>
             <section v-else class="isStatic">
-                <img :src="require(`${staticSRC}`)" alt="static chart example">
+                <img :src="getImgUrl(src)" :alt="whatever">
             </section>
         </section>
     </section>
@@ -46,6 +46,7 @@
 
 <script>
     import lineChart from '@/components/lineChart.vue'
+    // require(`../../assets/static/transportStatic.png`)
     export default {
         name: "GraphArticle",
         components: {
@@ -54,14 +55,19 @@
         props: {
             articleTitle: {type: String, required: true},
             update: {type: String},
-            staticSRC: {type: String},
+            src: {type: String},
             isStatic: {type: String}
         },
         methods: {
             hideText: function () {
                 const readMore = document.getElementById(this.articleTitle)
                 readMore.classList.toggle("hideReadMore")
+            },
+            getImgUrl(imageSrc) {
+                const images = require.context('../assets/static/', false, /\.png$/)
+                return images('./' + imageSrc)
             }
+
         }
     }
 </script>

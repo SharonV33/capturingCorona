@@ -29,7 +29,7 @@
           articleTitle="static article"
           update="14"
           isStatic="true"
-          staticSRC="@/assets/transportStatic.png"
+          src="transportStatic.png"
           />
 
     </section>
