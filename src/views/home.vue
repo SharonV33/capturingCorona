@@ -47,7 +47,7 @@
     }
 
     .smallArticle {
-        grid-row-start: 2;
+        grid-column-start: span 2;
     }
 
     .largeArticle {
