@@ -4,7 +4,9 @@
       <section class="largeArticle" >
           <GraphArticle
                   articleTitle="hoi"
-                  update="14-01-2021 10:12"/>
+                  update="14-01-2021 10:12"
+                  isStatic="false"
+          />
       </section>
       <section class="smallArticle">
           <SmallArticle

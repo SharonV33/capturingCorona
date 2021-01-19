@@ -38,14 +38,14 @@
                     const title = 'Omzet groothandel'
 
                     const xValue = d => d.Perioden
-                    const xAxisLabel = 'Perioden'
+                    // const xAxisLabel = 'Perioden'
 
                     const yValue = d => d.Omzetontwikkeling
                     const yAxisLabel = 'Omzetontwikkeling'
 
 
                     const margin = {top: 60, right: 10, bottom: 100, left: 100}
-                   const width = parseInt(svg.style('width'))
+                    const width = parseInt(svg.style('width'))
                     const height = parseInt(svg.style('height'))
 
                     // const margin = { top: 60, right: 40, bottom: 88, left: 105 }
@@ -90,11 +90,11 @@
 
                     xAxisG.select('.domain').remove()
 
-                    xAxisG.append('text')
-                        .attr('class', 'axis-label')
-                        .attr('y', 80)
-                        .attr('x', innerWidth / 2)
-                        .text(xAxisLabel)
+                    // xAxisG.append('text')
+                    //     .attr('class', 'axis-label')
+                    //     .attr('y', 80)
+                    //     .attr('x', innerWidth / 2)
+                    //     .text(xAxisLabel)
 
                     const lineGenerator = line()
                         .x(d => xScale(xValue(d)))
@@ -123,31 +123,30 @@
 
 <style>
 
-    svg {
+    .lineChart {
         width: 100%;
         height: 100%;
     }
 
-    svg .line-path {
+    .lineChart g:nth-child(1) {
+        height: 100%;
+    }
+    .lineChart .line-path {
         fill: none;
         stroke: green;
         stroke-width: 5;
         stroke-linejoin: round;
     }
 
-    svg g {
-        width: 100%;
-    }
-
-    svg text {
+    .lineChart text {
         font-family: sans-serif;
     }
 
-    svg .tick {
+    .lineChart .tick {
         color: #ffffff;
     }
 
-    svg .tick text {
+    .lineChart .tick text {
         font-size: 1em;
         fill: #ffffff;
         text-anchor: start;
@@ -159,14 +158,14 @@
         overflow: auto;
         width: 100%;
     }
-    svg line {
+    .lineChart line {
         opacity: 0.1;
     }
-    svg .axis-label {
+    .lineChart .axis-label {
         font-size: 1em;
     }
 
-    svg .title {
+    .lineChart .title {
         font-size: 1em;
         fill: #ffffff;
     }

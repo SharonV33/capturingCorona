@@ -5,7 +5,9 @@
     <section class="largeArticle" >
       <GraphArticle
               articleTitle="Aantal pasagiers op luchthavens"
-              update="14-01-2021 10:12"/>
+              update="14-01-2021 10:12"
+              isStatic="false"
+      />
     </section>
     <section class="smallArticle">
       <SmallArticle
@@ -23,6 +25,13 @@
               :percentage="-35"/>
     </section>
     <section class="largeArticle">
+      <GraphArticle
+          articleTitle="static article"
+          update="14"
+          isStatic="true"
+          staticSRC="@/assets/transportStatic.png"
+          />
+
     </section>
   </div>
 </template>
