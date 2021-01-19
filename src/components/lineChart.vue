@@ -25,7 +25,7 @@
         },
         data () {
             return {
-                chartData: data,
+                chartData: this.data,
             }
         },
         mounted() {
@@ -37,7 +37,7 @@
         methods: {
             buildLineChart: function () {
                 const svg = select(`.${this.uniqueID}`)
-                const data = this.data
+                const data = this.chartData
 
                 const render = data => {
                     const title = this.uniqueID

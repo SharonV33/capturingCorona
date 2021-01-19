@@ -42,7 +42,7 @@
 import GraphArticle from '@/components/GraphArticle.vue'
 import SmallArticle from '@/components/SmallArticle.vue'
 import linkArticle from '@/components/linkArticle.vue'
-mport economyData from '@/assets/data/economyData.js'
+import economyData from '@/assets/data/economyData.js'
 
 export default {
   name: 'economy',
