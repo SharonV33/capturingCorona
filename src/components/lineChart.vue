@@ -1,6 +1,6 @@
 <template>
     <section>
-        <svg :class="articleTitle" class="lineChart"></svg>
+        <svg :class="uniqueID" class="lineChart"></svg>
     </section>
 </template>
 
@@ -16,12 +16,17 @@
         curveBasis
     } from 'd3'
 
-    import { data as dataFile } from "../assets/data/groothandelsbedrijven_omzetontwikkeling.js"
 
     export default {
         name: "lineChart",
         props: {
-            articleTitle: {type: String, required: true}
+            uniqueID: {type: String, required: true},
+            data: { type: Array, default: () => [] }
+        },
+        data () {
+            return {
+                chartData: data,
+            }
         },
         mounted() {
             this.buildLineChart()
@@ -31,17 +36,17 @@
         },
         methods: {
             buildLineChart: function () {
-                const svg = select(`.${this.articleTitle}`)
-                const data = dataFile
+                const svg = select(`.${this.uniqueID}`)
+                const data = this.data
 
                 const render = data => {
-                    const title = 'Omzet groothandel'
+                    const title = this.uniqueID
 
                     const xValue = d => d.Perioden
                     // const xAxisLabel = 'Perioden'
 
-                    const yValue = d => d.Omzetontwikkeling
-                    const yAxisLabel = 'Omzetontwikkeling'
+                    const yValue = d => d.Aantal
+                    const yAxisLabel = 'Aantal'
 
 
                     const margin = {top: 60, right: 10, bottom: 100, left: 100}
@@ -112,7 +117,7 @@
                 }
 
                 data.forEach(d => {
-                    d.Omzetontwikkeling = +d.Omzetontwikkeling
+                    d.Aantal = +d.Aantal
                     d.periode =  +d.periode
                 })
                 render(data)

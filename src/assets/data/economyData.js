@@ -1,4 +1,4 @@
-export const data = [
+export default [
   // {
   //   "Bedrijfstakken": "46 Groothandel en handelsbemiddeling",
   //   "Perioden": "2018",
@@ -47,47 +47,47 @@ export const data = [
   {
     "Bedrijfstakken": "462-469 Groothandel",
     "Perioden": "2018",
-    "Omzetontwikkeling": 4.9
+    "Aantal": 4.9
   },
   {
     "Bedrijfstakken": "462-469 Groothandel",
     "Perioden": "2019 1e kwartaal",
-    "Omzetontwikkeling": 3.1
+    "Aantal": 3.1
   },
   {
     "Bedrijfstakken": "462-469 Groothandel",
     "Perioden": "2019 2e kwartaal",
-    "Omzetontwikkeling": 2.4
+    "Aantal": 2.4
   },
   {
     "Bedrijfstakken": "462-469 Groothandel",
     "Perioden": "2019 3e kwartaal",
-    "Omzetontwikkeling": 3.5
+    "Aantal": 3.5
   },
   {
     "Bedrijfstakken": "462-469 Groothandel",
     "Perioden": "2019 4e kwartaal",
-    "Omzetontwikkeling": 1.7
+    "Aantal": 1.7
   },
   {
     "Bedrijfstakken": "462-469 Groothandel",
     "Perioden": "2019",
-    "Omzetontwikkeling": 2.6
+    "Aantal": 2.6
   },
   {
     "Bedrijfstakken": "462-469 Groothandel",
     "Perioden": "2020 1e kwartaal*",
-    "Omzetontwikkeling": 2.2
+    "Aantal": 2.2
   },
   {
     "Bedrijfstakken": "462-469 Groothandel",
     "Perioden": "2020 2e kwartaal*",
-    "Omzetontwikkeling": -9.4
+    "Aantal": -9.4
   },
   {
     "Bedrijfstakken": "462-469 Groothandel",
     "Perioden": "2020 3e kwartaal*",
-    "Omzetontwikkeling": -3
+    "Aantal": -3
   },
   // {
   //   "Bedrijfstakken": "462 Groothandel in landbouwproducten",

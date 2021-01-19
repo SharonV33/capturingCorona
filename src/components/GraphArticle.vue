@@ -1,7 +1,7 @@
 <template>
     <section class="articleContainer">
         <section class="mainContent">
-            <h3>{{articleTitle}}</h3>
+            <h3 class="subject">{{articleTitle}}</h3>
             <p class="lastUpdated">Laatst bijgewerkt: {{update}}</p>
             <section class="notStatic" v-if="isStatic === 'false'">
                 <form>
@@ -20,12 +20,12 @@
                     <input type="checkbox" id="wholesale">
                     <label for="wholesale">Groothandel</label>
                 </form>
-                <lineChart class="line" :articleTitle="articleTitle" />
+                <lineChart class="line" :uniqueID="uniqueID" :dataSource="dataSource"/>
 
                 <button v-on:Click="hideText">
                     Lees meer
                 </button>
-                <section class="readMoreSection hideReadMore" :id="articleTitle">
+                <section class="readMoreSection hideReadMore" :id="uniqueID">
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
                         Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
                         ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo,
@@ -38,7 +38,7 @@
                 </section>
             </section>
             <section v-else class="isStatic">
-                <img :src="getImgUrl(src)" :alt="whatever">
+                <img :src="getImgUrl(src)" alt="whatever">
             </section>
         </section>
     </section>
@@ -46,7 +46,6 @@
 
 <script>
     import lineChart from '@/components/lineChart.vue'
-    // require(`../../assets/static/transportStatic.png`)
     export default {
         name: "GraphArticle",
         components: {
@@ -54,20 +53,21 @@
         },
         props: {
             articleTitle: {type: String, required: true},
+            uniqueID: {type: String, required: true},
             update: {type: String},
             src: {type: String},
-            isStatic: {type: String}
+            isStatic: {type: String},
+            data: { type: Array, default: () => [] }
         },
         methods: {
             hideText: function () {
-                const readMore = document.getElementById(this.articleTitle)
+                const readMore = document.getElementById(this.uniqueID)
                 readMore.classList.toggle("hideReadMore")
             },
             getImgUrl(imageSrc) {
                 const images = require.context('../assets/static/', false, /\.png$/)
                 return images('./' + imageSrc)
             }
-
         }
     }
 </script>

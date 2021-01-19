@@ -1,12 +1,13 @@
 <template>
   <div class="contentOverview">
     <h1 class="pageTitle">Transport en vervoer</h1>
-
     <section class="largeArticle" >
       <GraphArticle
-              articleTitle="Aantal pasagiers op luchthavens"
+              articleTitle="Aantal pasagiers per luchthaven"
+              uniqueID="airportChart"
               update="14-01-2021 10:12"
               isStatic="false"
+              data="transPortData"
       />
     </section>
     <section class="smallArticle">
@@ -27,11 +28,11 @@
     <section class="largeArticle">
       <GraphArticle
           articleTitle="static article"
-          update="14"
+          uniqueID="transportMovementChart"
+          update="14-01-2021 10:12"
           isStatic="true"
           src="transportStatic.png"
           />
-
     </section>
   </div>
 </template>
@@ -40,12 +41,18 @@
   // @ is an alias to /src
   import GraphArticle from '@/components/GraphArticle.vue'
   import SmallArticle from '@/components/SmallArticle.vue'
+  import transportData from '@/assets/data/transportData.js'
 
   export default {
     name: 'transport',
     components: {
       GraphArticle,
       SmallArticle
+    },
+    data () {
+      return {
+        transportData,
+      }
     }
   }
 </script>

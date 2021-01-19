@@ -4,8 +4,10 @@
       <section class="largeArticle" >
           <GraphArticle
                   articleTitle="hoi"
+                  uniqueID="branchDevelopmentChart"
                   update="14-01-2021 10:12"
                   isStatic="false"
+
           />
       </section>
       <section class="smallArticle">
@@ -14,6 +16,7 @@
                   icon="fas fa-euro"
                   percentage="12"
                   update="14-01-2021 10:12"
+                  data="economyData"
           />
       </section>
       <section class="articleLink">
@@ -39,6 +42,7 @@
 import GraphArticle from '@/components/GraphArticle.vue'
 import SmallArticle from '@/components/SmallArticle.vue'
 import linkArticle from '@/components/linkArticle.vue'
+mport economyData from '@/assets/data/economyData.js'
 
 export default {
   name: 'economy',
@@ -46,7 +50,13 @@ export default {
         GraphArticle,
         SmallArticle,
         linkArticle
+    },
+    data () {
+        return {
+            economyData,
+        }
     }
+
 }
 </script>
 
