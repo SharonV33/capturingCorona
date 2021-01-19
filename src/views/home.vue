@@ -55,6 +55,9 @@
         grid-column-end: 5;
     }
 
+    .articleLink {
+        grid-column-start: span 4;
+    }
     .home {
         min-height: 38rem!important;
         flex-direction: column!important;

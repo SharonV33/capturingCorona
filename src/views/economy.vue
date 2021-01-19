@@ -19,11 +19,23 @@
                   icon="fas fa-construction"
                   percentage="99"/>
       </section>
-      <section class="smallArticle">
-          <NegativeSmallArticle />
-      </section>
       <section class="largeArticle" >
           <GraphArticle articleTitle="hoi"/>
+      </section>
+      <section class="articleLink">
+            <linkArticle title="Zijn er regionale verschillen in economische ontwikkelingen?"/>
+      </section>
+      <section class="articleLink">
+          <linkArticle title="Wat zijn de regionale gevolgen van de coronacrisis voor de economie en de arbeidsmarkt?"/>
+      </section>
+      <section class="articleLink">
+          <linkArticle title="Wat zijn de economische gevolgen van de eerste coronagolf?"/>
+      </section>
+      <section class="articleLink">
+          <linkArticle title="Wat zijn de regionale gevolgen van de coronacrisis voor de economie en de arbeidsmarkt?"/>
+      </section>
+      <section class="articleLink">
+          <linkArticle title="Hoe ontwikkeld de Nederlandse goederenhandel?"/>
       </section>
   </div>
 </template>
@@ -32,14 +44,14 @@
 // @ is an alias to /src
 import GraphArticle from '@/components/GraphArticle.vue'
 import SmallArticle from '@/components/SmallArticle.vue'
-import NegativeSmallArticle from '@/components/NegativeSmallArticle.vue'
+import linkArticle from '@/components/linkArticle.vue'
 
 export default {
   name: 'economy',
     components: {
         GraphArticle,
         SmallArticle,
-        NegativeSmallArticle
+        linkArticle
     }
 }
 </script>

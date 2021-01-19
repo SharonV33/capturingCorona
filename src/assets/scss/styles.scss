@@ -6,7 +6,7 @@ $fa-font-path: "./assets/webfonts";
 @import './fontawesome/brands.scss';
 
 * {
-  font-family: 'Soho W01 Medium',sans-serif;
+  font-family: 'Nixie One',sans-serif;
   font-size: 1rem;
 }
 
@@ -74,6 +74,7 @@ h3 {
   color: #ffffff;
   fill: #ffffff;
   justify-self: center;
+  font-size: 1.1em;
 }
 
 #search input {
