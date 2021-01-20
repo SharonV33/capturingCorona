@@ -32,6 +32,17 @@
             />
         </section>
 
+        <section class="largeArticle" >
+            <GraphArticle
+                    articleTitle=""
+                    uniqueID="staticIncome"
+                    update=""
+                    isStatic="true"
+                    src="incomeChart.png"
+                    class="staticLargeArticle"
+            />
+        </section>
+
         <p class="subTitlePage">Overige vragen en antwoorden</p>
         <section class="articleLink">
             <linkArticle title="Hoeveel mensen waren in oktober werkloos?"/>

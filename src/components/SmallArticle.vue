@@ -10,7 +10,7 @@
         </section>
         <section v-else class="notStaticSmall">
         <i :class="iconClass"></i>
-            <h3 id="percentage">{{ percentage }}</h3>
+            <h3 id="percentage">{{positiveValue}}</h3>
         </section>
     </section>
 </template>
@@ -33,13 +33,18 @@
                 return this.percentage < 0
                     ? `${this.icon} negative`
                     : `${this.icon} positive`
+            },
+            positiveValue () {
+                return this.percentage > 0
+                    ? `+${this.percentage}`
+                    : `${this.percentage}`
             }
         },
         methods: {
             getImgUrl(imageSrc) {
                 const images = require.context('../assets/static/', false, /\.png$/)
                 return images('./' + imageSrc)
-            }
+            },
         }
 
     }
@@ -76,6 +81,14 @@
         font-size: 0.5rem;
     }
 
+    .notStaticSmall {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+
+    }
+
     .iconArticle i {
         font-size: 3rem;
         justify-self: end;
@@ -85,10 +98,8 @@
         font-weight: lighter;
         color: #ffffff;
         font-size: 3.5rem;
-        margin: 0;
-        grid-row-start: 2;
-        grid-column-start: 2;
-        align-self: start;
+        align-self: flex-start;
+        margin: 0 auto;
     }
 
     .isStatic img {
