@@ -55,16 +55,16 @@
             <a>Medisch</a>
           </router-link>
         </div>
-        <div class="product">
-          <router-link to="/product">
-            <img src="@/assets/product.svg" alt="product icon">
-            <a>Product & handel</a>
-          </router-link>
-        </div>
         <div class="government">
           <router-link to="/government">
             <img src="@/assets/government.svg" alt="government icon">
             <a>Overheid</a>
+          </router-link>
+        </div>
+        <div class="product">
+          <router-link to="/product">
+            <img src="@/assets/product.svg" alt="product icon">
+            <a>Product & handel</a>
           </router-link>
         </div>
         <div class="transport">

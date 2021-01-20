@@ -10,12 +10,12 @@ const routes = [
   {
     path: '/economy',
     name: 'economy',
-    component: () => import(/* webpackChunkName: "about" */ '../views/economy.vue')
+    component: () => import('../views/economy.vue')
   },
   {
     path: '/transport',
     name: 'transport',
-    component: () => import(/* webpackChunkName: "about" */ '../views/transport.vue')
+    component: () => import('../views/transport.vue')
   },
   {
     path: '/social',

@@ -27,7 +27,7 @@ h3 {
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Nixie One',sans-serif;
+  font-family: 'Nixie One';
   font-weight: lighter;
 }
 
@@ -104,9 +104,11 @@ h1, h2, h3, h4, h5 {
   flex-direction: column;
   align-items: center;
   width: 6vw;
-  height: 37rem;
+  height: 40rem;
   padding-top: 1rem;
   margin-left: 2rem;
+  position: sticky;
+  top: 1rem;
 }
 
 #category div {
@@ -121,9 +123,8 @@ h1, h2, h3, h4, h5 {
 
 #category div img {
   border-radius: 30px;
-  opacity: 0.65;
-  width: 2rem;
-  padding: 0.5rem;
+  width: 1.5rem;
+  padding: 1rem;
 }
 
 #category div a {
@@ -136,6 +137,10 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 0.5rem;
 }
 
+#category div a a {
+  opacity: 0.4;
+}
+
 #category div a:visited {
   text-decoration: none;
   color: #ffffff;
@@ -143,6 +148,10 @@ h1, h2, h3, h4, h5 {
 
 #category div img {
   background-color: #334d7f;
+}
+
+.router-link-active a {
+  opacity: 1!important;
 }
 
 #category .economy .router-link-active img {
@@ -179,6 +188,7 @@ h1, h2, h3, h4, h5 {
   display: flex;
   justify-content: center;
   margin-bottom: 5rem;
+  margin-left: 10rem;
 }
 
 router-view {

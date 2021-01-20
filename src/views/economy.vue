@@ -1,6 +1,6 @@
 <template>
   <div class="contentOverview">
-      <h1 class="pageTitle">Onze economie tijdens het coronavirus</h1>
+      <h1 class="pageTitle">Economie</h1>
       <section class="largeArticle" >
           <GraphArticle
                   articleTitle="Hoe ontwikkeld de omzet van diverse sectoren"
@@ -8,7 +8,6 @@
                   update="14-01-2021 10:12"
                   isStatic="false"
                   :data="economyData"
-
           />
       </section>
 
@@ -21,6 +20,7 @@
                   update="14-01-2021 10:12"
           />
       </section>
+
       <section class="smallArticle">
           <SmallArticle
                   title="Grootste omzet verschil detailhandel"
@@ -38,7 +38,7 @@
                   update="14-01-2021 10:12"
                   isStatic="true"
                   src="economyStatic.png"
-                    class="staticLargeArticle"
+                  class="staticLargeArticle"
           />
       </section>
 
@@ -135,6 +135,3 @@ export default {
 
 }
 </script>
-
-<style>
-</style>
