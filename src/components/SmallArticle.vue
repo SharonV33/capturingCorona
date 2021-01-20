@@ -81,15 +81,18 @@
         justify-self: end;
     }
 
-
     .iconArticle #percentage {
         font-weight: lighter;
         color: #ffffff;
-        font-size: 4rem;
+        font-size: 3.5rem;
         margin: 0;
         grid-row-start: 2;
         grid-column-start: 2;
         align-self: start;
+    }
+
+    .isStatic img {
+        height: 6em;
     }
     .positive {
         color: green;
