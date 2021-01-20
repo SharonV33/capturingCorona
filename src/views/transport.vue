@@ -50,7 +50,6 @@
       SmallArticle
     },
     data () {
-      console.log(transportData)
       return {
         transportData,
       }

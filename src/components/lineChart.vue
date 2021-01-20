@@ -42,13 +42,12 @@
                 const render = data => {
                     const title = this.uniqueID
 
-                    const xValue = d => d.periode
-                    // const xAxisLabel = 'Perioden'
+                    const xValue = d => d.label
 
                     const yValue = d => d.aantal
                     const yAxisLabel = 'Aantal'
 
-                    const margin = {top: 60, right: 10, bottom: 100, left: 100}
+                    const margin = {top: 60, right: 10, bottom: 100, left: 40}
                     const width = parseInt(svg.style('width'))
                     const height = parseInt(svg.style('height'))
 
@@ -57,8 +56,9 @@
                     const innerHeight = height - margin.top - margin.bottom
 
                     const xScale = scaleBand()
-                        .domain(data.map(data => data.periode))
+                        .domain(data.map(data => data.label))
                         .range([0, innerWidth])
+
 
                     const yScale = scaleLinear()
                         .domain(extent(data, yValue))
@@ -70,11 +70,11 @@
 
                     const xAxis = axisBottom(xScale)
                         .tickSize(-innerHeight)
-                        .tickPadding(1)
+                        .tickPadding(20)
 
                     const yAxis = axisLeft(yScale)
                         .tickSize(-innerWidth)
-                        .tickPadding(10)
+                        .tickPadding(40)
 
                     const yAxisG = g.append('g').call(yAxis)
                     yAxisG.selectAll('.domain').remove()
@@ -93,12 +93,6 @@
                         .attr('class', 'xaxis')
 
                     xAxisG.select('.domain').remove()
-
-                    // xAxisG.append('text')
-                    //     .attr('class', 'axis-label')
-                    //     .attr('y', 80)
-                    //     .attr('x', innerWidth / 2)
-                    //     .text(xAxisLabel)
 
                     const lineGenerator = line()
                         .x(d => xScale(xValue(d)))
@@ -120,7 +114,6 @@
                     d.periode =  +d.periode
                 })
                 render(data)
-                console.log(data)
             }
         },
     }
@@ -141,6 +134,8 @@
         stroke: green;
         stroke-width: 5;
         stroke-linejoin: round;
+        padding-right: 1em;
+        margin-right: 1em;
     }
 
     .lineChart text {
