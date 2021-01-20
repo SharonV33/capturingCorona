@@ -42,12 +42,11 @@
                 const render = data => {
                     const title = this.uniqueID
 
-                    const xValue = d => d.Perioden
+                    const xValue = d => d.periode
                     // const xAxisLabel = 'Perioden'
 
-                    const yValue = d => d.Aantal
+                    const yValue = d => d.aantal
                     const yAxisLabel = 'Aantal'
-
 
                     const margin = {top: 60, right: 10, bottom: 100, left: 100}
                     const width = parseInt(svg.style('width'))
@@ -58,7 +57,7 @@
                     const innerHeight = height - margin.top - margin.bottom
 
                     const xScale = scaleBand()
-                        .domain(data.map(data => data.Perioden))
+                        .domain(data.map(data => data.periode))
                         .range([0, innerWidth])
 
                     const yScale = scaleLinear()
@@ -117,10 +116,11 @@
                 }
 
                 data.forEach(d => {
-                    d.Aantal = +d.Aantal
+                    d.aantal = +d.aantal
                     d.periode =  +d.periode
                 })
                 render(data)
+                console.log(data)
             }
         },
     }

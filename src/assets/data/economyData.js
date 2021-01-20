@@ -46,48 +46,48 @@ export default [
   // },
   {
     "Bedrijfstakken": "462-469 Groothandel",
-    "Perioden": "2018",
-    "Aantal": 4.9
+    "periode": "2018",
+    "aantal": 4.9
   },
   {
     "Bedrijfstakken": "462-469 Groothandel",
-    "Perioden": "2019 1e kwartaal",
-    "Aantal": 3.1
+    "periode": "2019 1e kwartaal",
+    "aantal": 3.1
   },
   {
     "Bedrijfstakken": "462-469 Groothandel",
-    "Perioden": "2019 2e kwartaal",
-    "Aantal": 2.4
+    "periode": "2019 2e kwartaal",
+    "aantal": 2.4
   },
   {
     "Bedrijfstakken": "462-469 Groothandel",
-    "Perioden": "2019 3e kwartaal",
-    "Aantal": 3.5
+    "perioden": "2019 3e kwartaal",
+    "aantal": 3.5
   },
   {
     "Bedrijfstakken": "462-469 Groothandel",
-    "Perioden": "2019 4e kwartaal",
-    "Aantal": 1.7
+    "periode": "2019 4e kwartaal",
+    "aantal": 1.7
   },
   {
     "Bedrijfstakken": "462-469 Groothandel",
-    "Perioden": "2019",
-    "Aantal": 2.6
+    "periode": "2019",
+    "aantal": 2.6
   },
   {
     "Bedrijfstakken": "462-469 Groothandel",
-    "Perioden": "2020 1e kwartaal*",
-    "Aantal": 2.2
+    "periode": "2020 1e kwartaal*",
+    "aantal": 2.2
   },
   {
     "Bedrijfstakken": "462-469 Groothandel",
-    "Perioden": "2020 2e kwartaal*",
-    "Aantal": -9.4
+    "periode": "2020 2e kwartaal*",
+    "aantal": -9.4
   },
   {
     "Bedrijfstakken": "462-469 Groothandel",
-    "Perioden": "2020 3e kwartaal*",
-    "Aantal": -3
+    "periode": "2020 3e kwartaal*",
+    "aantal": -3
   },
   // {
   //   "Bedrijfstakken": "462 Groothandel in landbouwproducten",

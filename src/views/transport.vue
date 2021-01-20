@@ -7,7 +7,7 @@
               uniqueID="airportChart"
               update="14-01-2021 10:12"
               isStatic="false"
-              data="transPortData"
+              :data="transportData"
       />
     </section>
     <section class="smallArticle">
@@ -50,6 +50,7 @@
       SmallArticle
     },
     data () {
+      console.log(transportData)
       return {
         transportData,
       }

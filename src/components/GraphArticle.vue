@@ -20,7 +20,7 @@
                     <input type="checkbox" id="wholesale">
                     <label for="wholesale">Groothandel</label>
                 </form>
-                <lineChart class="line" :uniqueID="uniqueID" :dataSource="dataSource"/>
+                <lineChart class="line" :uniqueID="uniqueID" :data="data"/>
 
                 <button v-on:Click="hideText">
                     Lees meer

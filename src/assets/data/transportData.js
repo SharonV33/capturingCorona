@@ -1,17 +1,17 @@
 export default [
   {
     "Luchthavens": "Amsterdam Airport Schiphol",
-    "Perioden": "2019 november*",
+    "periode": "2019 november*",
     "aantal": 5323306
   },
   {
     "Luchthavens": "Amsterdam Airport Schiphol",
-    "Perioden": "2020 oktober*",
+    "periode": "2020 oktober*",
     "aantal": 1143483
   },
   {
     "Luchthavens": "Amsterdam Airport Schiphol",
-    "Perioden": "2020 november*",
+    "periode": "2020 november*",
     "aantal": 900434
   },
   // {

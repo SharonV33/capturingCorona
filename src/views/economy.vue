@@ -7,6 +7,7 @@
                   uniqueID="branchDevelopmentChart"
                   update="14-01-2021 10:12"
                   isStatic="false"
+                  :data="economyData"
 
           />
       </section>
