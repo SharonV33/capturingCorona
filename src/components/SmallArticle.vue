@@ -5,7 +5,7 @@
             <p class="subTitle">{{subTitle}}</p>
             <p class="lastUpdated">Laatst bijgewerkt {{update}}</p>
         </section>
-        <section v-else class="isStatic">
+        <section v-if="isStatic === `true`" class="isStatic">
             <img :src="getImgUrl(src)" alt="static chart">
         </section>
         <section v-else >
