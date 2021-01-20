@@ -43,11 +43,12 @@
                     const title = this.uniqueID
 
                     const xValue = d => d.label
+                    const xAxisLabel = 'Periode'
 
                     const yValue = d => d.aantal
                     const yAxisLabel = 'Aantal'
 
-                    const margin = {top: 60, right: 10, bottom: 100, left: 40}
+                    const margin = {top: 60, right: 10, bottom: 150, left: 70}
                     const width = parseInt(svg.style('width'))
                     const height = parseInt(svg.style('height'))
 
@@ -93,6 +94,13 @@
                         .attr('class', 'xaxis')
 
                     xAxisG.select('.domain').remove()
+
+                    xAxisG.append('text')
+                        .attr('class', 'axis-label')
+                        .attr('y', 150)
+                        .attr('x', innerWidth / 2)
+                        .attr('fill', 'white')
+                        .text(xAxisLabel)
 
                     const lineGenerator = line()
                         .x(d => xScale(xValue(d)))
@@ -167,6 +175,8 @@
     }
     .lineChart .axis-label {
         font-size: 1em;
+        color: #ffffff;
+        transform: rotate(0deg);
     }
 
     .lineChart .title {

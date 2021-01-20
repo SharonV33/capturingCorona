@@ -47,54 +47,42 @@ export default [
   {
     "Bedrijfstakken": "462-469 Groothandel",
     "periode": "1",
-    "label": "2018",
-    "aantal": 4.9
-  },
-  {
-    "Bedrijfstakken": "462-469 Groothandel",
-    "periode": "2",
     "label": "2019 1e kwartaal",
     "aantal": 3.1
   },
   {
     "Bedrijfstakken": "462-469 Groothandel",
-    "periode": "3",
+    "periode": "2",
     "label": "2019 2e kwartaal",
     "aantal": 2.4
   },
   {
     "Bedrijfstakken": "462-469 Groothandel",
-    "periode": "4",
+    "periode": "3",
     "label": "2019 3e kwartaal",
     "aantal": 3.5
   },
   {
     "Bedrijfstakken": "462-469 Groothandel",
-    "periode": "5",
+    "periode": "4",
     "label": "2019 4e kwartaal",
     "aantal": 1.7
   },
   {
     "Bedrijfstakken": "462-469 Groothandel",
-    "periode": "6",
-    "label": "2019",
-    "aantal": 2.6
-  },
-  {
-    "Bedrijfstakken": "462-469 Groothandel",
-    "periode": "7",
+    "periode": "5",
     "label": "2020 1e kwartaal*",
     "aantal": 2.2
   },
   {
     "Bedrijfstakken": "462-469 Groothandel",
-    "periode": "8",
+    "periode": "6",
     "label": "2020 2e kwartaal*",
     "aantal": -9.4
   },
   {
     "Bedrijfstakken": "462-469 Groothandel",
-    "periode": "10",
+    "periode": "7",
     "label": "2020 3e kwartaal*",
     "aantal": -3
   },
