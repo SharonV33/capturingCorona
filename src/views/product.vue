@@ -20,6 +20,27 @@
                     icon="fas fa-truck"
                     :percentage="99"/>
         </section>
+
+        <p class="subTitlePage">Overige vragen en antwoorden</p>
+        <section class="articleLink">
+            <linkArticle title="Hoeveel is de productie van de industrie gedaald?"/>
+        </section>
+        <section class="articleLink">
+            <linkArticle title="Hoe ontwikkelt de omzet van de groothandel zich?"/>
+        </section>
+        <section class="articleLink">
+            <linkArticle title="Hoeveel geld besteden Nederlandse consumenten bij Nederlandse webwinkels?"/>
+        </section>
+        <section class="articleLink">
+            <linkArticle title="Hoe ontwikkelt de omzet van de auto- en motorbranche zich?"/>
+        </section>
+        <section class="articleLink">
+            <linkArticle title="Hoeveel is de luchtvracht afgenomen in juni 2020?"/>
+        </section>
+        <section class="articleLink">
+            <linkArticle title="Laad meer vragen " class="loadMore"/>
+        </section>
+
     </div>
 </template>
 
@@ -27,12 +48,14 @@
     // @ is an alias to /src
     // import GraphArticle from '@/components/GraphArticle.vue'
     import SmallArticle from '@/components/SmallArticle.vue'
+    import linkArticle from '@/components/linkArticle.vue'
 
     export default {
         name: 'product',
         components: {
             // GraphArticle,
-            SmallArticle
+            SmallArticle,
+            linkArticle
         }
     }
 </script>

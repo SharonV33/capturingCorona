@@ -1,6 +1,6 @@
 <template>
   <div class="contentOverview">
-      <h1 class="pageTitle">Economie</h1>
+      <h1 class="pageTitle">Onze economie tijdens het coronavirus</h1>
       <section class="largeArticle" >
           <GraphArticle
                   articleTitle="Hoe ontwikkeld de omzet van diverse sectoren"
@@ -91,6 +91,7 @@
           />
       </section>
 
+      <p class="subTitlePage">Overige vragen en antwoorden</p>
       <section class="articleLink">
             <linkArticle title="Zijn er regionale verschillen in economische ontwikkelingen?"/>
       </section>
@@ -105,6 +106,9 @@
       </section>
       <section class="articleLink">
           <linkArticle title="Hoe ontwikkeld de Nederlandse goederenhandel?"/>
+      </section>
+      <section class="articleLink">
+          <linkArticle title="Laad meer vragen " class="loadMore"/>
       </section>
   </div>
 </template>
