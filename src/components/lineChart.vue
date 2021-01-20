@@ -70,7 +70,7 @@
 
                     const xAxis = axisBottom(xScale)
                         .tickSize(-innerHeight)
-                        .tickPadding(20)
+                        .tickPadding(0)
 
                     const yAxis = axisLeft(yScale)
                         .tickSize(-innerWidth)
@@ -102,10 +102,12 @@
                     g.append('path')
                         .attr('class', 'line-path')
                         .attr('d', lineGenerator(data))
+                        .attr('transform', `translate(0, ${xScale.domain})`)
 
+                    console.log()
                     g.append('text')
                         .attr('class', 'title')
-                        .attr('y', -10)
+                        .attr('y', -30)
                         .text(title)
                 }
 
@@ -154,8 +156,10 @@
 
     .xaxis text {
         transform: rotate(70deg);
+        text-anchor: start;
         overflow-wrap: normal;
         overflow: auto;
+        padding-bottom: 2em;
         width: 100%;
     }
     .lineChart line {
