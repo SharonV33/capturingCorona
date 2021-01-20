@@ -1,6 +1,17 @@
 <template>
     <div class="contentOverview">
         <h1 class="pageTitle">Sociaal</h1>
+
+        <section class="largeArticle" >
+            <GraphArticle
+                    articleTitle=""
+                    uniqueID="socialStatic"
+                    update="14-01-2021 10:12"
+                    isStatic="true"
+                    src="socialStatic.png"
+                    class="staticLargeArticle"
+            />
+        </section>
         <section class="smallArticle">
             <SmallArticle
                     title="Aantal misdrijven in vergelijking tot vorig jaar"
@@ -42,14 +53,14 @@
 
 <script>
     // @ is an alias to /src
-    // import GraphArticle from '@/components/GraphArticle.vue'
+    import GraphArticle from '@/components/GraphArticle.vue'
     import SmallArticle from '@/components/SmallArticle.vue'
     import linkArticle from '@/components/linkArticle.vue'
 
     export default {
         name: 'social',
         components: {
-            // GraphArticle,
+            GraphArticle,
             SmallArticle,
             linkArticle
         }
