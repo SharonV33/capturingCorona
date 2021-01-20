@@ -26,6 +26,8 @@
                   title="Grootste omzet verschil detailhandel"
                   subTitle="Ten opzichten van 2019"
                   update="14-01-2021 10:12"
+                  isStatic="true"
+                  src="detailhandel.png"
           />
       </section>
 
@@ -73,9 +75,11 @@
 
       <section class="smallArticle">
           <SmallArticle
-                  title="Aantal faillisementen"
+                  title="Aantal faillissementen"
                   subTitle=""
                   update="14-01-2021 10:12"
+                  isStatic="true"
+                  src="faillissementen.png"
           />
       </section>
 

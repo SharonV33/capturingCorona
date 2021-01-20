@@ -140,7 +140,6 @@
         width: 80%;
         min-height: 50rem;
         padding: 0 2vw;
-        align-self: flex-end;
         color: #ffffff;
     }
 
