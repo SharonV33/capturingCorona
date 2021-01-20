@@ -3,22 +3,20 @@
         <h1 class="pageTitle">Overheid</h1>
         <section class="smallArticle">
             <SmallArticle
-                    title="Hoe ontwikkelt het aantal passagiers dat van en naar nationale luchthavens vliegt zich"
-                    icon="fas fa-plane"
-                    :percentage="12"
+                    title="Huidige saldo van de Rijksoverheid"
+                    icon="fas fa-balance-scale-right"
+                    percentage="-367000000000"
+                    update="14-01-2021 10:12"
             />
         </section>
+
         <section class="smallArticle">
             <SmallArticle
-                    title="Hoeveel minder reizen we met het openbaar vervoer"
-                    icon="fas fa-train"
-                    :percentage="-99"/>
-        </section>
-        <section class="smallArticle">
-            <SmallArticle
-                    title="Hoe ontwikkelt het goederenvervoer zich"
-                    icon="fas fa-truck"
-                    :percentage="99"/>
+                    title="Aantal bedrijven die gebruik maken van de financiële coronamaatregelen"
+                    icon="fas fa-hand-holding-usd"
+                    percentage="193450"
+                    update="14-01-2021 10:12"
+            />
         </section>
 
         <p class="subTitlePage">Overige vragen en antwoorden</p>
