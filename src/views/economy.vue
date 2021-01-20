@@ -14,22 +14,76 @@
 
       <section class="smallArticle">
           <SmallArticle
-                  title="Omzet horeca"
+                  title="Omzetontwikkeling horeca"
+                  subTitle="Ten opzichten van 3e kwartaal 2020"
                   icon="fas fa-euro"
-                  percentage="12"
+                  percentage="12%"
                   update="14-01-2021 10:12"
-                  data="economyData"
+          />
+      </section>
+      <section class="smallArticle">
+          <SmallArticle
+                  title="Grootste omzet verschil detailhandel"
+                  subTitle="Ten opzichten van 2019"
+                  update="14-01-2021 10:12"
           />
       </section>
 
       <section class="largeArticle" >
           <GraphArticle
-                  articleTitle="Wat zijn de regionale verschillen in economische ontwikkelingen?"
+                  articleTitle="OntwikkelingEconomy"
                   uniqueID="staticEconomy"
                   update="14-01-2021 10:12"
                   isStatic="true"
                   src="economyStatic.png"
                     class="staticLargeArticle"
+          />
+      </section>
+
+      <section class="smallArticle">
+          <SmallArticle
+                  title="Ontwikkeling Economie"
+                  subTitle="Ten opzichten van 2019"
+                  icon="fas fa-euro"
+                  percentage="+7.8%"
+                  update="14-01-2021 10:12"
+          />
+      </section>
+
+      <section class="smallArticle">
+          <SmallArticle
+                  title="Aantal banen"
+                  subTitle="Ten opzichten van 2019"
+                  icon="fas fa-briefcase"
+                  percentage="+165000"
+                  update="14-01-2021 10:12"
+          />
+      </section>
+
+      <section class="largeArticle" >
+          <GraphArticle
+                  articleTitle=""
+                  uniqueID="staticEconomy"
+                  update=""
+                  isStatic="true"
+                  src="economyTrust.png"
+                  class="staticLargeArticle"
+          />
+      </section>
+
+      <section class="smallArticle">
+          <SmallArticle
+                  title="Aantal faillisementen"
+                  subTitle=""
+                  update="14-01-2021 10:12"
+          />
+      </section>
+
+      <section class="smallArticle">
+          <SmallArticle
+                  title="Provincie met het laagste ondernemersvertrouwen"
+                  subTitle="4e kwartaal 2020"
+                  update="14-01-2021 10:12"
           />
       </section>
 

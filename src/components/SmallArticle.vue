@@ -8,7 +8,7 @@
         <section v-if="isStatic === `true`" class="isStatic">
             <img :src="getImgUrl(src)" alt="static chart">
         </section>
-        <section v-else >
+        <section v-else class="notStaticSmall">
         <i :class="iconClass"></i>
             <h3 id="percentage">{{ percentage }}</h3>
         </section>
@@ -19,10 +19,10 @@
     export default {
         name: "SmallArticle",
         props: {
-            icon: { type: String, required: true },
+            icon: { type: String},
             title: { type: String, required: true },
             subTitle: {type: String},
-            percentage: { type: String, required: true },
+            percentage: { type: String},
             update: {type: String},
             isStatic: {type: String},
             src: {type: String}
@@ -80,6 +80,7 @@
         font-size: 3rem;
         justify-self: end;
     }
+
 
     .iconArticle #percentage {
         font-weight: lighter;
