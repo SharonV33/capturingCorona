@@ -3,9 +3,10 @@
         <h1 class="pageTitle">Sociaal</h1>
         <section class="smallArticle">
             <SmallArticle
-                    title="oe ontwikkelt het aantal passagiers dat van en naar nationale luchthavens vliegt zich"
-                    icon="fas fa-plane"
-                    :percentage="12"
+                    title="Aantal misdrijven in vergelijking tot vorig jaar"
+                    icon="fas fa-siren-on"
+                    update="14-01-2021 10:12"
+                    :percentage="-8963"
             />
         </section>
         <section class="smallArticle">
