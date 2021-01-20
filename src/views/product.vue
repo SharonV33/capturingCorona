@@ -27,7 +27,7 @@
                     title="Dit besteden Nederlanders aan webwinkels"
                     update="14-01-2021 10:12"
                     icon="fas fa-globe"
-                    :percentage="271200000"
+                    percentage="2712milj"
             />
         </section>
 

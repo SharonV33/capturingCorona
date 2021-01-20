@@ -5,7 +5,7 @@
             <SmallArticle
                     title="Huidige saldo van de Rijksoverheid"
                     icon="fas fa-balance-scale-right"
-                    percentage="-367000000000"
+                    percentage="-367mlj"
                     update="14-01-2021 10:12"
             />
         </section>

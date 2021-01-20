@@ -9,16 +9,30 @@
                     :percentage="-8963"
             />
         </section>
+
         <section class="smallArticle">
-            <SmallArticle title="Hoeveel minder reizen we met het openbaar vervoer" icon="fas fa-train" :percentage="-99"/>
-        </section>
-        <section class="smallArticle">
-            <SmallArticle title="Hoe ontwikkelt het goederenvervoer zich" icon="fas fa-truck" :percentage="99"/>
+            <SmallArticle
+                    title=""
+                    isStatic="true"
+                    src="vakgebieden.png"
+            />
         </section>
 
         <p class="subTitlePage">Overige vragen en antwoorden</p>
         <section class="articleLink">
-            <linkArticle title="Zijn er regionale verschillen in economische ontwikkelingen?"/>
+            <linkArticle title="Hoe is de leefsituatie van Nederlandse ouderen?"/>
+        </section>
+        <section class="articleLink">
+            <linkArticle title="Hoeveel Nederlanders kampen met eenzaamheid?"/>
+        </section>
+        <section class="articleLink">
+            <linkArticle title="Hoe ontwikkelt de criminaliteit zich?"/>
+        </section>
+        <section class="articleLink">
+            <linkArticle title="Hoe ontwikkelt de bevolking zich?"/>
+        </section>
+        <section class="articleLink">
+            <linkArticle title="Hoeveel contact hebben mensen normaal gesproken met familie, vrienden of buren?"/>
         </section>
         <section class="articleLink">
             <linkArticle title="Laad meer vragen " class="loadMore"/>
