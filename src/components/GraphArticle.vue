@@ -77,7 +77,6 @@
 <style scoped>
 
     .articleContainer {
-        background-color: #252A4A;
         display: flex;
         min-height: 50rem;
         flex-direction: row;

@@ -33,7 +33,7 @@
 
       <section class="largeArticle" >
           <GraphArticle
-                  articleTitle="OntwikkelingEconomy"
+                  articleTitle="Wat zijn de regionale verschillen in de economische ontwikkeling?"
                   uniqueID="staticEconomy"
                   update="14-01-2021 10:12"
                   isStatic="true"
@@ -88,6 +88,7 @@
                   title="Provincie met het laagste ondernemersvertrouwen"
                   subTitle="4e kwartaal 2020"
                   update="14-01-2021 10:12"
+                  src="province.png"
           />
       </section>
 
@@ -132,6 +133,5 @@ export default {
             economyData,
         }
     }
-
 }
 </script>
