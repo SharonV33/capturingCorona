@@ -3,7 +3,7 @@
       <h1 class="pageTitle">Economie</h1>
       <section class="largeArticle" >
           <GraphArticle
-                  articleTitle="hoi"
+                  articleTitle="Hoe ontwikkeld de omzet van diverse sectoren"
                   uniqueID="branchDevelopmentChart"
                   update="14-01-2021 10:12"
                   isStatic="false"
@@ -19,6 +19,17 @@
                   percentage="12"
                   update="14-01-2021 10:12"
                   data="economyData"
+          />
+      </section>
+
+      <section class="largeArticle" >
+          <GraphArticle
+                  articleTitle="Wat zijn de regionale verschillen in economische ontwikkelingen?"
+                  uniqueID="staticEconomy"
+                  update="14-01-2021 10:12"
+                  isStatic="true"
+                  src="economyStatic.png"
+                    class="staticLargeArticle"
           />
       </section>
 
@@ -63,6 +74,5 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style>
 </style>

@@ -20,12 +20,6 @@
                     icon="fas fa-truck"
                     :percentage="99"/>
         </section>
-        <section class="smallArticle">
-            <NegativeSmallArticle />
-        </section>
-        <section class="largeArticle">
-            <!--<GraphArticle />-->
-        </section>
     </div>
 </template>
 
@@ -33,14 +27,12 @@
     // @ is an alias to /src
     // import GraphArticle from '@/components/GraphArticle.vue'
     import SmallArticle from '@/components/SmallArticle.vue'
-    import NegativeSmallArticle from '@/components/NegativeSmallArticle.vue'
 
     export default {
         name: 'governmemt',
         components: {
             // GraphArticle,
-            SmallArticle,
-            NegativeSmallArticle
+            SmallArticle
         }
     }
 </script>

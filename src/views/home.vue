@@ -76,6 +76,10 @@
         grid-column-end: 5;
     }
 
+    .staticLargeArticle {
+        min-height: auto!important;
+    }
+
     .articleLink {
         grid-column-start: span 4;
     }
