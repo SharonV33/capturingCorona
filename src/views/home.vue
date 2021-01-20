@@ -67,6 +67,14 @@
         width: 100%;
     }
 
+    .subTitlePage {
+        color: #ffffff;
+        opacity: 0.4;
+        margin-top: 3rem;
+        margin-bottom: 0;
+        grid-column-start: span 4;
+    }
+
     .smallArticle {
         grid-column-start: span 2;
     }
@@ -83,6 +91,17 @@
     .articleLink {
         grid-column-start: span 4;
     }
+
+    .loadMore {
+        background-color: #273B61!important;
+        text-align: center!important;
+        justify-content: center!important;
+    }
+
+    .loadMore p {
+        margin-right: 0.5em;
+    }
+
     .home {
         min-height: 38rem!important;
         flex-direction: column!important;
@@ -108,6 +127,10 @@
 
     .home .line svg{
         height: 100%!important;
+        width: 80%;
+    }
+    .home .line svg g{
+        width: 80%;
     }
 
 

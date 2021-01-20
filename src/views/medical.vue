@@ -20,6 +20,26 @@
             />
         </section>
 
+        <p class="subTitlePage">Overige vragen en antwoorden</p>
+        <section class="articleLink">
+            <linkArticle title="Hoeveel mensen sterven er wekelijks in Nederland?"/>
+        </section>
+        <section class="articleLink">
+            <linkArticle title="Hoeveel coronadoden zijn vastgesteld in maart en april 2020?"/>
+        </section>
+        <section class="articleLink">
+            <linkArticle title="Hoeveel mensen overleden aan COVID-19 die niet als zodanig geregistreerd werden?"/>
+        </section>
+        <section class="articleLink">
+            <linkArticle title="Hoe verschillen de sterftecijfers in institutionele en particuliere huishoudens?"/>
+        </section>
+        <section class="articleLink">
+            <linkArticle title="In welke provincie overleden tijdens de tweede coronagolf meer mensen dan verwacht?"/>
+        </section>
+        <section class="articleLink">
+            <linkArticle title="Laad meer vragen " class="loadMore"/>
+        </section>
+
     </div>
 </template>
 
@@ -27,12 +47,14 @@
     // @ is an alias to /src
     // import GraphArticle from '@/components/GraphArticle.vue'
     import SmallArticle from '@/components/SmallArticle.vue'
+    import linkArticle from '@/components/linkArticle.vue'
 
     export default {
         name: 'medical',
         components: {
             // GraphArticle,
-            SmallArticle
+            SmallArticle,
+            linkArticle
         }
     }
 </script>
