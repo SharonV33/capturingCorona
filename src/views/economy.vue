@@ -11,6 +11,7 @@
 
           />
       </section>
+
       <section class="smallArticle">
           <SmallArticle
                   title="Omzet horeca"
@@ -20,6 +21,7 @@
                   data="economyData"
           />
       </section>
+
       <section class="articleLink">
             <linkArticle title="Zijn er regionale verschillen in economische ontwikkelingen?"/>
       </section>

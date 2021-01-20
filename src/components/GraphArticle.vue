@@ -38,7 +38,7 @@
                 </section>
             </section>
             <section v-else class="isStatic">
-                <img :src="getImgUrl(src)" alt="whatever">
+                <img :src="getImgUrl(src)" alt="static chart">
             </section>
         </section>
     </section>

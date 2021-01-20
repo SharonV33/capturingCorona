@@ -5,8 +5,13 @@
             <p class="subTitle">{{subTitle}}</p>
             <p class="lastUpdated">Laatst bijgewerkt {{update}}</p>
         </section>
+        <section v-else class="isStatic">
+            <img :src="getImgUrl(src)" alt="static chart">
+        </section>
+        <section v-else >
         <i :class="iconClass"></i>
             <h3 id="percentage">{{ percentage }}</h3>
+        </section>
     </section>
 </template>
 
@@ -18,7 +23,9 @@
             title: { type: String, required: true },
             subTitle: {type: String},
             percentage: { type: String, required: true },
-            update: {type: String}
+            update: {type: String},
+            isStatic: {type: String},
+            src: {type: String}
 
         },
         computed: {
@@ -27,7 +34,14 @@
                     ? `${this.icon} negative`
                     : `${this.icon} positive`
             }
+        },
+        methods: {
+            getImgUrl(imageSrc) {
+                const images = require.context('../assets/static/', false, /\.png$/)
+                return images('./' + imageSrc)
+            }
         }
+
     }
 </script>
 
