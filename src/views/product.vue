@@ -1,6 +1,18 @@
 <template>
     <div class="contentOverview">
         <h1 class="pageTitle">Product en handel</h1>
+
+        <section class="largeArticle" >
+            <GraphArticle
+                    articleTitle=""
+                    uniqueID="staticProduct"
+                    update=""
+                    isStatic="true"
+                    src="mainWork.png"
+                    class="mainProduct"
+            />
+        </section>
+
         <section class="smallArticle">
             <SmallArticle
                     title="Consumptie huishoudens"
@@ -45,14 +57,14 @@
 
 <script>
     // @ is an alias to /src
-    // import GraphArticle from '@/components/GraphArticle.vue'
+    import GraphArticle from '@/components/GraphArticle.vue'
     import SmallArticle from '@/components/SmallArticle.vue'
     import linkArticle from '@/components/linkArticle.vue'
 
     export default {
         name: 'product',
         components: {
-            // GraphArticle,
+            GraphArticle,
             SmallArticle,
             linkArticle
         }
