@@ -1,6 +1,6 @@
 <template>
   <div class="contentOverview">
-      <h1 class="pageTitle">Economie</h1>
+      <h1 class="pageTitle">Onze economie tijdens het coronavirus</h1>
       <section class="largeArticle" >
           <GraphArticle
                   articleTitle="Hoe ontwikkeld de omzet van diverse sectoren"
@@ -8,6 +8,7 @@
                   update="14-01-2021 10:12"
                   isStatic="false"
                   :data="economyData"
+                  readMoreText="De detailhandel heeft in november bijna 10 procent meer omgezet dan in november 2019. Het verkoopvolume lag 8,4 procent hoger. Zowel de foodsector als de non-foodsector realiseerde een hogere omzet met een stijging van ongeveer 6%. Daarnaast is online 55,5 procent meer omgezet."
           />
       </section>
 

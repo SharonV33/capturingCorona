@@ -1,6 +1,6 @@
 <template>
     <div class="contentOverview">
-        <h1 class="pageTitle">Sociaal</h1>
+        <h1 class="pageTitle">Het effect van corona op ons sociale leven</h1>
 
         <section class="largeArticle" >
             <GraphArticle

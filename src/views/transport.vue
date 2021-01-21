@@ -8,6 +8,7 @@
               update="14-01-2021 10:12"
               isStatic="false"
               :data="transportData"
+              readMoreText="De omzet van de transportsector daalde in het derde kwartaal van 2020 met ruim 15 procent in vergelijking met dezelfde periode vorig jaar. Bij veel branches stond de omzet in het teken van de coronamaatregelen. Vooral in de luchtvaart daalde de omzet (63 procent). Bij post- en koeriersdiensten steeg de omzet in het derde kwartaal als enige branche in de transportsector, met bijna 11 procent. De omzet uit internetverkopen nam zelfs met 39 procent toe."
       />
     </section>
     <section class="smallArticle">

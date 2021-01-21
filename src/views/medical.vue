@@ -1,6 +1,6 @@
 <template>
     <div class="contentOverview">
-        <h1 class="pageTitle">Medisch</h1>
+        <h1 class="pageTitle">Ziekte en zorg tijdens de epidemie</h1>
         <section class="smallArticle">
             <SmallArticle
                     title="Mensen schatten gezondheid hoger in ondanks de epidemie"

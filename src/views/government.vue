@@ -1,6 +1,6 @@
 <template>
     <div class="contentOverview">
-        <h1 class="pageTitle">Overheid</h1>
+        <h1 class="pageTitle">Hoe gaat de overheid met de pandemie om</h1>
         <section class="smallArticle">
             <SmallArticle
                     title="Huidige saldo van de Rijksoverheid"

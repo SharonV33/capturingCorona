@@ -1,13 +1,13 @@
 <template>
     <div class="contentOverview">
-        <h1 class="pageTitle">Werk en loon</h1>
+        <h1 class="pageTitle">De impact van corona op ons werk</h1>
         <section class="largeArticle" >
             <GraphArticle
                     articleTitle=""
-                    uniqueID="staticWork"
+                    uniqueID="staticIncome"
                     update=""
                     isStatic="true"
-                    src="mainWork.png"
+                    src="incomeChart.png"
                     class="staticLargeArticle"
             />
         </section>
@@ -32,16 +32,6 @@
             />
         </section>
 
-        <section class="largeArticle" >
-            <GraphArticle
-                    articleTitle=""
-                    uniqueID="staticIncome"
-                    update=""
-                    isStatic="true"
-                    src="incomeChart.png"
-                    class="staticLargeArticle"
-            />
-        </section>
 
         <p class="subTitlePage">Overige vragen en antwoorden</p>
         <section class="articleLink">

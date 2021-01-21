@@ -1,6 +1,6 @@
 <template>
     <div class="contentOverview">
-        <h1 class="pageTitle">Hoe gaat het met nederland tijdens corona?</h1>
+        <h1 class="pageTitle">Hoe gaat het met Nederland tijdens corona?</h1>
         <section class="largeArticleHome" >
             <GraphArticle
                     articleTitle="Hoe ontwikkeld de omzet van diverse sectoren"
