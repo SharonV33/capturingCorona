@@ -1,6 +1,6 @@
 <template>
     <div class="contentOverview">
-        <h1 class="pageTitle">Product en handel</h1>
+        <h1 class="pageTitle">Het handelen tijdens covid in beeld?</h1>
 
         <section class="largeArticle" >
             <GraphArticle
