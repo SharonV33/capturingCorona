@@ -1,6 +1,6 @@
 <template>
   <div class="contentOverview">
-    <h1 class="pageTitle">Transport en vervoer</h1>
+    <h1 class="pageTitle">De aanzienlijke afname van vervoersgebruik</h1>
     <section class="largeArticle" >
       <GraphArticle
               articleTitle="Aantal pasagiers per luchthaven"
