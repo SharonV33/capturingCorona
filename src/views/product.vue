@@ -8,7 +8,7 @@
                     uniqueID="staticProduct"
                     update=""
                     isStatic="true"
-                    src="mainWork.png"
+                    src="mainProduct.png"
                     class="mainProduct"
             />
         </section>
