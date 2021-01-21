@@ -3,7 +3,7 @@
         <h1 class="pageTitle">Hoe gaat het met nederland tijdens corona?</h1>
         <section class="largeArticleHome" >
             <GraphArticle
-                    articleTitle="hoi"
+                    articleTitle="Hoe ontwikkeld de omzet van diverse sectoren"
                     uniqueID="branchDevelopmentChart"
                     update="14-01-2021 10:12"
                     isStatic="false"
