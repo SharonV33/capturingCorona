@@ -57,7 +57,7 @@
                   title="Aantal banen"
                   subTitle="Ten opzichten van 2019"
                   icon="fas fa-briefcase"
-                  percentage="+165000"
+                  percentage="165000"
                   update="14-01-2021 10:12"
           />
       </section>
@@ -88,6 +88,7 @@
                   title="Provincie met het laagste ondernemersvertrouwen"
                   subTitle="4e kwartaal 2020"
                   update="14-01-2021 10:12"
+                  isStatic="true"
                   src="province.png"
           />
       </section>
